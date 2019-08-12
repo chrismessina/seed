@@ -1,16 +1,16 @@
-import classnames from 'classnames/dedupe';
+import classnames from 'classnames/dedupe'
 
-import DEFAULT_ATTRS from './default-attrs.json';
+import DEFAULT_ATTRS from './default-attrs.json'
 
 class Icon {
   constructor(name, contents, tags = []) {
-    this.name = name;
-    this.contents = contents;
-    this.tags = tags;
+    this.name = name
+    this.contents = contents
+    this.tags = tags
     this.attrs = {
       ...DEFAULT_ATTRS,
-      ...{ class: `feather feather-${name}` },
-    };
+      ...{ class: `feather feather-${name}` }
+    }
   }
 
   /**
@@ -22,10 +22,10 @@ class Icon {
     const combinedAttrs = {
       ...this.attrs,
       ...attrs,
-      ...{ class: classnames(this.attrs.class, attrs.class) },
-    };
+      ...{ class: classnames(this.attrs.class, attrs.class) }
+    }
 
-    return `<svg ${attrsToString(combinedAttrs)}>${this.contents}</svg>`;
+    return `<svg ${attrsToString(combinedAttrs)}>${this.contents}</svg>`
   }
 
   /**
@@ -37,7 +37,7 @@ class Icon {
    * @returns {string}
    */
   toString() {
-    return this.contents;
+    return this.contents
   }
 }
 
@@ -49,7 +49,7 @@ class Icon {
 function attrsToString(attrs) {
   return Object.keys(attrs)
     .map(key => `${key}="${attrs[key]}"`)
-    .join(' ');
+    .join(' ')
 }
 
-export default Icon;
+export default Icon

@@ -4,6 +4,6 @@
 
 // module.exports = { icons, toSvg, replace };
 
-(function testFunc() {
-  console.log('Testing testing');
-})();
+;(function testFunc() {
+  console.log('Testing testing')
+})()
