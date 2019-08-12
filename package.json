@@ -1,0 +1,44 @@
+{
+  "name": "seed",
+  "version": "1.0.1",
+  "description": "Open source icons in their simplest form.",
+  "main": "../src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./bin/build.sh",
+    "format": "prettier-eslint \"src/**/*.js\" --write"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seedicons/seed.git"
+  },
+  "author": "Ross Moody <fiftyfivehis@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/seedicons/seed/issues"
+  },
+  "homepage": "https://github.com/seedicons/seed#readme",
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "core-js": "^3.1.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/node": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/register": "^7.5.5",
+    "babel-loader": "^8.0.6",
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-prettier": "^3.1.0",
+    "html-minifier": "^4.0.0",
+    "prettier": "^1.18.2",
+    "prettier-eslint-cli": "^5.0.0",
+    "svgo": "^1.3.0",
+    "webpack": "^4.39.1",
+    "webpack-cli": "^3.3.6"
+  }
+}
