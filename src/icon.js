@@ -27,18 +27,6 @@ class Icon {
 
     return `<svg ${attrsToString(combinedAttrs)}>${this.contents}</svg>`
   }
-
-  /**
-   * Return string representation of an `Icon`.
-   *
-   * Added for backward compatibility. If old code expects `seed.icons.<name>`
-   * to be a string, `toString()` will get implicitly called.
-   *
-   * @returns {string}
-   */
-  toString() {
-    return this.contents
-  }
 }
 
 /**

@@ -2,7 +2,6 @@ import icons from './icons'
 
 /**
  * Create an SVG string.
- * @deprecated
  * @param {string} name
  * @param {Object} attrs
  * @returns {string}

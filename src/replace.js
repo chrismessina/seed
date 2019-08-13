@@ -1,11 +1,10 @@
-/* eslint-env browser */
 import classnames from 'classnames/dedupe'
 
 import icons from './icons'
 
 /**
- * Replace all HTML elements that have a `icon-seed` attribute with SVG markup
- * corresponding to the element's `icon-seed` attribute value.
+ * Replace all HTML elements that have a `seed-icon` attribute with SVG markup
+ * corresponding to the element's `seed-icon` attribute value.
  * @param {Object} attrs
  */
 function replace(attrs = {}) {
@@ -13,7 +12,8 @@ function replace(attrs = {}) {
     throw new Error('`seed.replace()` only works in a browser environment.')
   }
 
-  const elementsToReplace = document.querySelectorAll('[icon-seed]')
+  // eslint-disable-next-line no-undef
+  const elementsToReplace = document.querySelectorAll('[seed-icon]')
 
   Array.from(elementsToReplace).forEach(element =>
     replaceElement(element, attrs)
@@ -22,20 +22,21 @@ function replace(attrs = {}) {
 
 /**
  * Replace a single HTML element with SVG markup
- * corresponding to the element's `icon-seed` attribute value.
+ * corresponding to the element's `seed-icon` attribute value.
  * @param {HTMLElement} element
  * @param {Object} attrs
  */
 function replaceElement(element, attrs = {}) {
   const elementAttrs = getAttrs(element)
-  const name = elementAttrs['icon-seed']
-  delete elementAttrs['icon-seed']
+  const name = elementAttrs['seed-icon']
+  delete elementAttrs['seed-icon']
 
   const svgString = icons[name].toSvg({
     ...attrs,
     ...elementAttrs,
     ...{ class: classnames(attrs.class, elementAttrs.class) }
   })
+  // eslint-disable-next-line no-undef
   const svgDocument = new DOMParser().parseFromString(
     svgString,
     'image/svg+xml'
