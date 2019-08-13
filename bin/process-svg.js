@@ -1,8 +1,8 @@
-import Svgo from 'svgo';
-import cheerio from 'cheerio';
-import { format } from 'prettier';
+import Svgo from 'svgo'
+import cheerio from 'cheerio'
+import { format } from 'prettier'
 
-import DEFAULT_ATTRS from '../src/default-attrs.json';
+import DEFAULT_ATTRS from '../src/default-attrs.json'
 
 /**
  * Process SVG string.
@@ -17,7 +17,7 @@ function processSvg(svg) {
       // remove semicolon inserted by prettier
       // because prettier thinks it's formatting JSX not HTML
       .then(svg => svg.replace(/;/g, ''))
-  );
+  )
 }
 
 /**
@@ -31,13 +31,13 @@ function optimize(svg) {
       { convertShapeToPath: false },
       { mergePaths: false },
       { removeAttrs: { attrs: '(fill|stroke.*)' } },
-      { removeTitle: true },
-    ],
-  });
+      { removeTitle: true }
+    ]
+  })
 
   return new Promise(resolve => {
-    svgo.optimize(svg, ({ data }) => resolve(data));
-  });
+    svgo.optimize(svg, ({ data }) => resolve(data))
+  })
 }
 
 /**
@@ -46,13 +46,13 @@ function optimize(svg) {
  * @returns {string}
  */
 function setAttrs(svg) {
-  const $ = cheerio.load(svg);
+  const $ = cheerio.load(svg)
 
   Object.keys(DEFAULT_ATTRS).forEach(key =>
-    $('svg').attr(key, DEFAULT_ATTRS[key]),
-  );
+    $('svg').attr(key, DEFAULT_ATTRS[key])
+  )
 
-  return $('body').html();
+  return $('body').html()
 }
 
-export default processSvg;
+export default processSvg
