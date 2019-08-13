@@ -1,5 +1,4 @@
 import classnames from 'classnames/dedupe'
-
 import DEFAULT_ATTRS from './default-attrs.json'
 
 class Icon {
@@ -13,11 +12,6 @@ class Icon {
     }
   }
 
-  /**
-   * Create an SVG string.
-   * @param {Object} attrs
-   * @returns {string}
-   */
   toSvg(attrs = {}) {
     const combinedAttrs = {
       ...this.attrs,
@@ -29,11 +23,6 @@ class Icon {
   }
 }
 
-/**
- * Convert attributes object to string of HTML attributes.
- * @param {Object} attrs
- * @returns {string}
- */
 function attrsToString(attrs) {
   return Object.keys(attrs)
     .map(key => `${key}="${attrs[key]}"`)

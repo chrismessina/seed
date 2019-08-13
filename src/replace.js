@@ -3,8 +3,8 @@ import classnames from 'classnames/dedupe'
 import icons from './icons'
 
 /**
- * Replace all HTML elements that have a `seed-icon` attribute with SVG markup
- * corresponding to the element's `seed-icon` attribute value.
+ * Replace all HTML elements that have a `data-seed` attribute with SVG markup
+ * corresponding to the element's `data-seed` attribute value.
  * @param {Object} attrs
  */
 function replace(attrs = {}) {
@@ -13,7 +13,7 @@ function replace(attrs = {}) {
   }
 
   // eslint-disable-next-line no-undef
-  const elementsToReplace = document.querySelectorAll('[seed-icon]')
+  const elementsToReplace = document.querySelectorAll('[data-seed]')
 
   Array.from(elementsToReplace).forEach(element =>
     replaceElement(element, attrs)
@@ -22,14 +22,14 @@ function replace(attrs = {}) {
 
 /**
  * Replace a single HTML element with SVG markup
- * corresponding to the element's `seed-icon` attribute value.
+ * corresponding to the element's `data-seed` attribute value.
  * @param {HTMLElement} element
  * @param {Object} attrs
  */
 function replaceElement(element, attrs = {}) {
   const elementAttrs = getAttrs(element)
-  const name = elementAttrs['seed-icon']
-  delete elementAttrs['seed-icon']
+  const name = elementAttrs['data-seed']
+  delete elementAttrs['data-seed']
 
   const svgString = icons[name].toSvg({
     ...attrs,

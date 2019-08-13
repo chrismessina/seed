@@ -10,14 +10,10 @@ import DEFAULT_ATTRS from '../src/default-attrs.json'
  * @param {Promise<string>}
  */
 function processSvg(svg) {
-  return (
-    optimize(svg)
-      .then(setAttrs)
-      .then(result => format(result, { parser: 'babel' }))
-      // remove semicolon inserted by prettier
-      // because prettier thinks it's formatting JSX not HTML
-      .then(svg => svg.replace(/;/g, ''))
-  )
+  return optimize(svg)
+    .then(setAttrs)
+    .then(result => format(result, { parser: 'babel' }))
+    .then(svg => svg.replace(/;/g, ''))
 }
 
 /**
@@ -30,16 +26,13 @@ function optimize(svg) {
     plugins: [
       { convertShapeToPath: false },
       { mergePaths: false },
+      { inlineStyles: { onlyMatchedOnce: false } },
       { removeAttrs: { attrs: '(fill|stroke.*)' } },
       { removeTitle: true }
     ]
   })
 
-  return new Promise(resolve => {
-    svgo.optimize(svg).then(result => {
-      resolve(result.data)
-    })
-  })
+  return svgo.optimize(svg).then(({ data }) => data)
 }
 
 /**
