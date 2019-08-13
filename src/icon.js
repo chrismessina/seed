@@ -9,7 +9,7 @@ class Icon {
     this.tags = tags
     this.attrs = {
       ...DEFAULT_ATTRS,
-      ...{ class: `feather feather-${name}` }
+      ...{ class: `seed seed-${name}` }
     }
   }
 
@@ -31,7 +31,7 @@ class Icon {
   /**
    * Return string representation of an `Icon`.
    *
-   * Added for backward compatibility. If old code expects `feather.icons.<name>`
+   * Added for backward compatibility. If old code expects `seed.icons.<name>`
    * to be a string, `toString()` will get implicitly called.
    *
    * @returns {string}

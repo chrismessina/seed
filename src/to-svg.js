@@ -8,17 +8,13 @@ import icons from './icons'
  * @returns {string}
  */
 function toSvg(name, attrs = {}) {
-  console.warn(
-    'feather.toSvg() is deprecated. Please use feather.icons[name].toSvg() instead.'
-  )
-
   if (!name) {
     throw new Error('The required `key` (icon name) parameter is missing.')
   }
 
   if (!icons[name]) {
     throw new Error(
-      `No icon matching '${name}'. See the complete list of icons at https://feathericons.com`
+      `No icon matching '${name}'. See the complete list of icons at https://seedicons.com`
     )
   }
 

@@ -4,16 +4,16 @@ import classnames from 'classnames/dedupe'
 import icons from './icons'
 
 /**
- * Replace all HTML elements that have a `data-feather` attribute with SVG markup
- * corresponding to the element's `data-feather` attribute value.
+ * Replace all HTML elements that have a `icon-seed` attribute with SVG markup
+ * corresponding to the element's `icon-seed` attribute value.
  * @param {Object} attrs
  */
 function replace(attrs = {}) {
   if (typeof document === 'undefined') {
-    throw new Error('`feather.replace()` only works in a browser environment.')
+    throw new Error('`seed.replace()` only works in a browser environment.')
   }
 
-  const elementsToReplace = document.querySelectorAll('[data-feather]')
+  const elementsToReplace = document.querySelectorAll('[icon-seed]')
 
   Array.from(elementsToReplace).forEach(element =>
     replaceElement(element, attrs)
@@ -22,14 +22,14 @@ function replace(attrs = {}) {
 
 /**
  * Replace a single HTML element with SVG markup
- * corresponding to the element's `data-feather` attribute value.
+ * corresponding to the element's `icon-seed` attribute value.
  * @param {HTMLElement} element
  * @param {Object} attrs
  */
 function replaceElement(element, attrs = {}) {
   const elementAttrs = getAttrs(element)
-  const name = elementAttrs['data-feather']
-  delete elementAttrs['data-feather']
+  const name = elementAttrs['icon-seed']
+  delete elementAttrs['icon-seed']
 
   const svgString = icons[name].toSvg({
     ...attrs,

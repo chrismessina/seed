@@ -10,9 +10,6 @@ mkdir dist
 # Build icons.json
 npx babel-node bin/build-icons-json.js
 
-# Build SVG sprite
-npx babel-node bin/build-sprite.js
-
 # Create dist/icons directory
 npx rimraf dist/icons
 mkdir dist/icons
