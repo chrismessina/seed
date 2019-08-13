@@ -6,6 +6,7 @@
     "no-param-reassign": "off",
     "no-shadow": "off",
     "no-use-before-define": "off",
+    "no-undef": "off",
     "prettier/prettier": [
       "error",
       {
