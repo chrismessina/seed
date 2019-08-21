@@ -2,10 +2,9 @@ import classnames from 'classnames/dedupe'
 import DEFAULT_ATTRS from './default-attrs.json'
 
 class Icon {
-  constructor(name, contents, tags = []) {
+  constructor(name, contents) {
     this.name = name
     this.contents = contents
-    this.tags = tags
     this.attrs = {
       ...DEFAULT_ATTRS,
       ...{ class: `seed seed-${name}` }
@@ -19,7 +18,12 @@ class Icon {
       ...{ class: classnames(this.attrs.class, attrs.class) }
     }
 
-    return `<svg ${attrsToString(combinedAttrs)}>${this.contents}</svg>`
+    const svg = `<svg ${attrsToString(combinedAttrs)}>${this.contents}</svg>`
+    return svg
+  }
+
+  toString() {
+    return this.contents
   }
 }
 

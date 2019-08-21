@@ -1,18 +1,18 @@
 {
   "name": "seed",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Open source icons in their simplest form.",
-  "main": "../src/index.js",
+  "main": "../package/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "./bin/build.sh",
+    "build": "./scripts/build.sh",
     "format": "prettier-eslint \"**/*.js|json|md|html\" --write"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/seedicons/seed.git"
   },
-  "author": "Ross Moody <fiftyfivehis@gmail.com>",
+  "author": "Ross Moody <ross@rossmoody.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/seedicons/seed/issues"
