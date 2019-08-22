@@ -5,17 +5,17 @@ npx rimraf dist
 mkdir dist
 
 # Process SVG files
-npx babel-node scripts/process-svgs.js
+npx babel-node scripts/services/process-svgs.js
 
 # Build icons.json
-npx babel-node scripts/build-icons-json.js
+npx babel-node scripts/services/build-icons-json.js
 
 # Create dist/icons directory
 npx rimraf dist/icons
 mkdir dist/icons
 
 # Build SVG icons
-npx babel-node scripts/build-svgs.js
+npx babel-node scripts/services/build-svgs.js
 
 # Build JavaScript library
 npx webpack --output-filename seed.js --mode development
