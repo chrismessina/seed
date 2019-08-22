@@ -5,9 +5,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     libraryTarget: 'umd',
-    library: 'seed-icons',
-    // Prevents webpack from referencing `window` in the UMD build
-    // Source: https://git.io/vppgU
+    library: 'seed',
     globalObject: "typeof self !== 'undefined' ? self : this"
   },
   devtool: 'source-map',

@@ -1,11 +1,11 @@
 #!/bin/bash
 
-# Process SVG files
-npx babel-node scripts/process-svgs.js
-
 # Create dist directory
 npx rimraf dist
 mkdir dist
+
+# Process SVG files
+npx babel-node scripts/process-svgs.js
 
 # Build icons.json
 npx babel-node scripts/build-icons-json.js

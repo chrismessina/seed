@@ -1,10 +1,14 @@
 {
-  "name": "seed",
-  "version": "1.0.2",
+  "name": "seed-icons",
+  "version": "1.0.6",
   "description": "Open source icons in their simplest form.",
-  "main": "../package/index.js",
+  "main": "dist/seed.js",
+  "unpkg": "dist/seed.min.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run build",
     "build": "./scripts/build.sh",
     "format": "prettier-eslint \"**/*.js|json|md|html\" --write"
   },
