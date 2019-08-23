@@ -1,6 +1,6 @@
 {
     "name": "seed-icons",
-    "version": "1.0.9",
+    "version": "1.0.10",
     "description": "Open source icons in their simplest form.",
     "main": "dist/seed.js",
     "unpkg": "dist/seed.min.js",
@@ -36,5 +36,5 @@
     "bugs": {
         "url": "https://github.com/seedicons/seed/issues"
     },
-    "homepage": "https://github.com/seedicons/seed#readme"
+    "homepage": "https://seedicons.com"
 }

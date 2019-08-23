@@ -1,6 +1,6 @@
 import fs from 'fs'
 import path from 'path'
-import icons from '../dist/icons.json'
+import icons from '../../dist/icons.json'
 import buildSpriteString from './build-sprite-string'
 
 const OUT_FILE = path.resolve(__dirname, '../../dist/seed-sprite.svg')
