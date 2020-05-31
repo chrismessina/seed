@@ -9,8 +9,7 @@
     ],
     "scripts": {
         "build": "./scripts/build.sh",
-        "official": "npm run build && npm publish",
-        "netlify": "./seedicons.com/build.sh"
+        "official": "npm run build && npm publish"
     },
     "repository": {
         "type": "git",
