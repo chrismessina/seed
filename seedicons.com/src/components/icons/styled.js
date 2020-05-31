@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Content = styled.div`
-  max-width: ${p => p.theme.breakpoints['large']};
+  max-width: ${p => p.theme.breakpoints.medium};
   display: grid;
   /* grid-template-columns: 1fr 4fr; */
   grid-auto-rows: minmax(70px, auto);
@@ -58,7 +58,7 @@ export const IconFrame = styled.span`
   align-items: center;
   justify-content: center;
   border-radius: ${p => p.theme.radii};
-  border: 1px solid ${p => p.theme.colors.stroke};
+  border: 1px solid transparent;
   color: ${p => p.theme.colors.text};
   width: 100%;
   min-height: 70px;

@@ -3,7 +3,7 @@ import Switch from 'react-switch'
 
 const ThemeSwitch = props => {
   return (
-    <div css={{ margin: '0 16px' }}>
+    <div css={{ margin: '0 0 0 20px' }}>
       <label htmlFor="switch-theme">
         <Switch
           checked={

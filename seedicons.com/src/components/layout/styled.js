@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Main = styled.main`
-  padding: ${p => p.theme.space[12]} ${p => p.theme.space[4]};
+  padding: ${p => p.theme.space[12]} ${p => p.theme.space[5]};
   margin: 0 ${p => p.theme.space[5]};
 
   & {

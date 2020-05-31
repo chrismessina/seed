@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const SearchCont = styled.div`
   position: relative;
-  max-width: ${p => p.theme.breakpoints['medium']};
+  max-width: ${p => p.theme.breakpoints.medium};
   margin: 0 auto ${p => p.theme.space[6]};
 `
 

@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import { Link } from 'gatsby'
-import { Button } from '../base'
 
 export const StyledHeader = styled.header`
   display: flex;
@@ -12,15 +11,17 @@ export const StyledHeader = styled.header`
   z-index: 999;
   transition: border 0.6s;
   border-bottom: 1px solid transparent;
+  justify-content: center;
 `
 
 export const Container = styled.div`
   display: flex;
   flex: 1;
-  padding: ${p => p.theme.space[4]} ${p => p.theme.space[4]};
+  padding: ${p => p.theme.space[4]} ${p => p.theme.space[5]};
   margin: 0 ${p => p.theme.space[5]};
   justify-content: space-between;
   height: 60px;
+  max-width: ${p => p.theme.breakpoints.large};
 
   ${StyledHeader} & {
     @media (max-width: ${p => p.theme.breakpoints.medium}) {
@@ -78,6 +79,10 @@ export const VersionTag = styled.a`
     }
   }
 `
+export const NavCont = styled.nav`
+  display: flex;
+  align-items: center;
+`
 
 export const NavLink = styled(Link)`
   font-size: ${p => p.theme.fontSizes[2]};
@@ -90,21 +95,5 @@ export const NavLink = styled(Link)`
   }
 `
 
-export const ExternalLink = styled.a`
-  display: flex;
-  align-items: center;
-  font-size: ${p => p.theme.fontSizes[2]};
-  text-decoration: none;
-  color: ${p => p.theme.colors.text};
-  margin: 0 ${p => p.theme.space[4]};
 
-  &:hover {
-    color: ${p => p.theme.colors.primary};
-  }
-`
-
-export const NavCont = styled.nav`
-  display: flex;
-  align-items: center;
-`
 

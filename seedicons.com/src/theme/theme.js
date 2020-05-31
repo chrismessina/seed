@@ -52,7 +52,7 @@ const lightTheme = {
     primaryLight: 'rgba(60,209,165, .2)',
     stroke: '#DBE0EA',
     placeholder: '#757575',
-    backgroundLight: '#F8F9FB'
+    backgroundLight: '#f0f2f5'
   },
   radii: '8px',
   shadows: [

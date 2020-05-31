@@ -3,10 +3,10 @@ import styled from 'styled-components'
 export const StyledHero = styled.div`
   display: flex;
   justify-content: center;
-  max-width: ${p => p.theme.breakpoints['medium']};
+  max-width: ${p => p.theme.breakpoints.medium};
   flex-direction: column;
   text-align: center;
-  margin: 0 auto ${p => p.theme.space[6]};
+  margin: 0 auto ${p => p.theme.space[4]};
 
   & h1 {
     font-size: ${p => p.theme.fontSizes[8]};
@@ -14,6 +14,10 @@ export const StyledHero = styled.div`
     color: ${p => p.theme.colors.header};
     font-weight: 700;
     margin: ${p => p.theme.space[2]} 0 ${p => p.theme.space[3]};
+
+    @media (max-width: ${p => p.theme.breakpoints.medium}) {
+      font-size: ${p => p.theme.fontSizes[7]};
+    }
   }
 
   & h2 {
@@ -21,17 +25,10 @@ export const StyledHero = styled.div`
     line-height: ${p => p.theme.lineHeights.normal};
     font-weight: 400;
     margin: ${p => p.theme.space[2]} 0 ${p => p.theme.space[5]};
-  }
-`
 
-export const StyledLinks = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  & {
-    @media (max-width: ${p => p.theme.breakpoints.small}) {
-      display: none;
+    @media (max-width: ${p => p.theme.breakpoints.medium}) {
+      font-size: ${p => p.theme.fontSizes[3]};
     }
   }
 `
+
