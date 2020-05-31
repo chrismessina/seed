@@ -10,14 +10,14 @@ import { IconGrid } from '../components/icons'
 import { icons } from 'seed-icons'
 
 const IndexPage = () => (
-  <MyThemeProvider>
-    <Layout>
-      <SEO title="Home" />
-      <Hero />
-      <Search placeholder={`Search icons...`} />
-      <IconGrid icons={icons} />
-    </Layout>
-  </MyThemeProvider>
+    <MyThemeProvider>
+        <Layout>
+            <SEO title="Home" />
+            <Hero />
+            <Search placeholder={`Search icons...`} />
+            <IconGrid icons={icons} />
+        </Layout>
+    </MyThemeProvider>
 )
 
 export default IndexPage
