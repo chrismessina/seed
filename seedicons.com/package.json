@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "author": "Ross Moody <ross@rossmoody.com>",
   "dependencies": {
+    "fuse.js": "3.4.5",
     "gatsby": "^2.18.17",
     "gatsby-image": "^2.2.37",
     "gatsby-plugin-manifest": "^2.2.34",
@@ -19,7 +20,8 @@
     "react-helmet": "^5.2.1",
     "react-switch": "^5.0.1",
     "seed-icons": "^1.0.17",
-    "styled-components": "^4.4.1"
+    "styled-components": "^4.4.1",
+    "use-query-params": "^0.4.4"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.3",

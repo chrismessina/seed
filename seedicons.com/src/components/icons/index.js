@@ -2,8 +2,8 @@ import React from 'react'
 import { Icon } from '../base'
 import { IconsGrid, IconCont, Content, Tooltip } from './styled'
 
-export const IconGrid = icons => {
-    const iconArr = Object.values(icons.icons)
+export function IconGrid ({icons}) {
+    const iconArr = Object.values(icons)
 
     return (
         <Content>

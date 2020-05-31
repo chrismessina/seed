@@ -7,11 +7,11 @@ import { Main, Footer } from './styled'
 
 const Layout = ({ children }) => {
     return (
-        <>
+        <React.Fragment>
             <Header />
             <Main>{children}</Main>
             <Footer>Made by Ross Moody</Footer>
-        </>
+        </React.Fragment>
     )
 }
 
