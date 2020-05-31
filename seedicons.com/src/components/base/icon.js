@@ -1,14 +1,13 @@
 import React from 'react'
 
-function Icon({ name, size = 24, ...props }) {
+function Icon( props ) {
   return (
     <svg
       viewBox="0 0 24 24"
-      width={size}
-      height={size}
-      fill="currentColor"
+      width={props.size}
+      height={props.size}
       dangerouslySetInnerHTML={{ __html: props.content }}
-      {...props}
+      fill='currentColor'
     />
   )
 }

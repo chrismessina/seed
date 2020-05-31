@@ -13,13 +13,12 @@ export const SearchIcon = styled.div`
   display: flex;
   align-items: center;
   left: ${p => p.theme.space[3]};
-  color: inherit;
 `
 
 export const StyledSearch = styled.input`
   width: 100%;
   padding: ${p => p.theme.space[4]} ${p => p.theme.space[4]}
-    ${p => p.theme.space[4]} ${p => p.theme.space[8]};
+    ${p => p.theme.space[4]} ${p => p.theme.space[7]};
   color: ${p => p.theme.colors.header};
   outline: 0;
   border: 0;

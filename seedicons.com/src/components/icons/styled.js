@@ -3,39 +3,9 @@ import styled from 'styled-components'
 export const Content = styled.div`
   max-width: ${p => p.theme.breakpoints.medium};
   display: grid;
-  /* grid-template-columns: 1fr 4fr; */
   grid-auto-rows: minmax(70px, auto);
   grid-gap: ${p => p.theme.space[5]};
   margin: 0 auto;
-
-  & {
-    @media (max-width: ${p => p.theme.breakpoints.medium}) {
-      grid-template-columns: 1fr;
-    }
-  }
-`
-
-export const SidebarCont = styled.div`
-  min-width: 140px;
-  font-size: ${p => p.theme.fontSizes[2]};
-  color: ${p => p.theme.colors.text};
-
-  & ul {
-    margin: 0 0 ${p => p.theme.space[6]};
-  }
-
-  & h3 {
-    font-size: ${p => p.theme.fontSizes[1]};
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    opacity: 0.6;
-  }
-
-  ${Content} & {
-    @media (max-width: ${p => p.theme.breakpoints.medium}) {
-      display: none;
-    }
-  }
 `
 
 export const IconsGrid = styled.div`
@@ -47,24 +17,39 @@ export const IconsGrid = styled.div`
 
 export const IconCont = styled.div`
   display: flex;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  font-size: ${p => p.theme.fontSizes[2]};
-`
-
-export const IconFrame = styled.span`
-  display: flex;
+  position: relative;
   align-items: center;
   justify-content: center;
-  border-radius: ${p => p.theme.radii};
-  border: 1px solid transparent;
-  color: ${p => p.theme.colors.text};
   width: 100%;
   min-height: 70px;
-  margin: 0 0 ${p => p.theme.space[3]};
+  border: 1px solid transparent;
+  border-radius: ${p => p.theme.radii};
+  color: ${p => p.theme.colors.header};
 
   &:hover {
     border: 1px solid ${p => p.theme.colors.primary};
+    cursor: pointer;
   }
 `
+
+export const Tooltip = styled.div`
+  visibility: hidden;
+  background-color: ${p => p.theme.colors.primary};
+  color: ${p => p.theme.colors.background};
+  text-align: center;
+  padding: ${p => p.theme.space[2]} ${p => p.theme.space[3]};
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  bottom: 120%;
+  font-size: ${p => p.theme.fontSizes[2]};
+  opacity: 0;
+  transition: visibility 0s linear 400ms, opacity 400ms;
+
+  ${IconCont}:hover & {
+    visibility: visible;
+    transition: visibility 0s linear 50ms, opacity 500ms;
+    opacity: 1;
+  }
+`
+
