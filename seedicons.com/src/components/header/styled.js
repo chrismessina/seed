@@ -20,6 +20,7 @@ export const Container = styled.div`
   padding: ${p => p.theme.space[4]} ${p => p.theme.space[4]};
   margin: 0 ${p => p.theme.space[5]};
   justify-content: space-between;
+  height: 60px;
 
   ${StyledHeader} & {
     @media (max-width: ${p => p.theme.breakpoints.medium}) {
@@ -102,57 +103,8 @@ export const ExternalLink = styled.a`
   }
 `
 
-export const DownloadButton = styled(Button)`
-  margin: 0 ${p => p.theme.space[4]};
-  background: ${p => p.theme.colors.backgroundLight};
-  border: none;
-
-  &:hover {
-    color: white;
-    background: ${p => p.theme.colors.primary};
-  }
-`
-
 export const NavCont = styled.nav`
   display: flex;
   align-items: center;
-
-  ${StyledHeader} & {
-    @media (max-width: ${p => p.theme.breakpoints.medium}) {
-      display: none;
-    }
-  }
 `
 
-export const More = styled.button`
-  display: none;
-  color: ${p => (p.active ? 'white' : p.theme.colors.text)};
-  border: none;
-  cursor: pointer;
-  background: transparent;
-
-  ${StyledHeader} & {
-    @media (max-width: ${p => p.theme.breakpoints.medium}) {
-      display: flex;
-    }
-  }
-`
-
-export const MoreIcon = styled.div`
-  height: 24px;
-  width: 24px;
-  z-index: 2;
-  color: ${p => (p.active ? 'white' : p.theme.colors.text)};
-`
-
-export const MobileNav = styled.div`
-  display: flex;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  opacity: ${p => (p.active ? '1' : '0')};
-  left: ${p => (p.active ? '0' : '100')};
-  background-color: black;
-  transition: all 200ms ease-in-out;
-`

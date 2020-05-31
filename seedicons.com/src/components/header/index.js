@@ -1,35 +1,16 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { useTheme } from '../../theme/theme-context'
-import { Flex, Icon, Logotype, Logo, ThemeSwitch } from '../base'
+import { Flex, Logotype, Logo, ThemeSwitch } from '../base'
 import {
   StyledHeader,
   Container,
   LogotypeCont,
-  DownloadButton,
   LogoCont,
   NavCont,
   NavLink,
-  MobileNav,
-  More,
-  MoreIcon,
   VersionTag
 } from './styled'
 import { version } from 'seed-icons/package.json'
-import { icons } from 'seed-icons'
-
-const MobileNavigation = () => {
-  const [active, setActive] = useState()
-  console.log(icons)
-
-  return (
-    <More onClick={() => setActive(!active)}>
-      <MoreIcon active={active ? 1 : 0}>
-        <Icon content={icons["more-f"].contents} />
-      </MoreIcon>
-      <MobileNav active={active ? 1 : 0} />
-    </More>
-  )
-}
 
 const Header = () => {
   const themeToggle = useTheme()
@@ -59,17 +40,8 @@ const Header = () => {
           >
             Usage
           </NavLink>
-          <DownloadButton onClick={() => themeToggle.toggle()}>
-            <Icon
-              content={icons["more-f"].contents}
-              size={16}
-              css={{ marginRight: '8px' }}
-            />
-            Download
-          </DownloadButton>
           <ThemeSwitch storage={themeToggle} func={themeToggle.toggle} />
         </NavCont>
-        <MobileNavigation />
       </Container>
     </StyledHeader>
   )
