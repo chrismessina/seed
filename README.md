@@ -1,8 +1,3 @@
-# seed
+# Seed icons
 
-Icons in their simplest form.
-
-## Naming convention
-
-`icon-s` = stroke version
-`icon-f` = fill version
+What a description will be here one day.

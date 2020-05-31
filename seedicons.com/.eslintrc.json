@@ -1,0 +1,19 @@
+{
+  "parser": "babel-eslint",
+  "extends": ["eslint:recommended", "react-app", "prettier"],
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true,
+        "semi": false
+      }
+    ],
+    "react/react-in-jsx-scope": "off",
+    "react/no-typos": "off"
+  },
+  "env": {
+    "browser": true
+  }
+}
