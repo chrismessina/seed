@@ -28,11 +28,7 @@ function IndexPage({ location }) {
                     value={query || ''}
                     onChange={event => setQuery(event.target.value)}
                 />
-                {results.length > 0 ? (
-                    <IconGrid icons={results} />
-                ) : (
-                    <p>no results</p>
-                )}
+                <IconGrid icons={results} />
             </Layout>
         </MyThemeProvider>
     )

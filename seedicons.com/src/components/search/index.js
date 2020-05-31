@@ -2,23 +2,8 @@ import React from 'react'
 import { StyledSearch, SearchCont, SearchIcon } from './styled'
 import { Icon } from '../base'
 
-export const Search = ({ placeholder, value, onChange, ...props }) => {
+export const Search = ({ placeholder, value, onChange }) => {
     const inputElement = React.useRef(null)
-
-    function handleKeyDown(event) {
-        if (
-            event.key === '/' &&
-            inputElement.current !== document.activeElement
-        ) {
-            event.preventDefault()
-            inputElement.current.focus()
-        }
-    }
-
-    React.useEffect(() => {
-        window.addEventListener('keydown', handleKeyDown)
-        return () => window.removeEventListener('keydown', handleKeyDown)
-    }, [])
 
     return (
         <SearchCont>
@@ -35,6 +20,7 @@ export const Search = ({ placeholder, value, onChange, ...props }) => {
                 placeholder={placeholder}
                 onChange={onChange}
                 aria-label="Search"
+                autoFocus
             />
         </SearchCont>
     )
