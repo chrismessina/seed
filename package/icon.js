@@ -18,10 +18,7 @@ class Icon {
             ...{ class: classnames(this.attrs.class, attrs.class) },
         }
 
-        const svg = `<svg ${attrsToString(combinedAttrs)}>${
-            this.contents
-        }</svg>`
-        return svg
+        return `<svg ${attrsToString(combinedAttrs)}>${this.contents}</svg>`
     }
 
     toString() {

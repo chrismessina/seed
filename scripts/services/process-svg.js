@@ -7,7 +7,7 @@ import DEFAULT_ATTRS from '../../package/default-attrs.json'
 const defaultOptions = [
     { convertShapeToPath: false },
     { convertPathData: { noSpaceAfterFlags: false } },
-    { mergePaths: false },
+    { mergePaths: { noSpaceAfterFlags: false } },
     { inlineStyles: { onlyMatchedOnce: false } },
     { removeTitle: true },
     { removeHiddenElems: false },

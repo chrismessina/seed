@@ -10,9 +10,6 @@ npx babel-node scripts/services/process-svgs.js
 # Build icons.json
 npx babel-node scripts/services/build-icons-json.js
 
-# Build SVG sprite
-npx babel-node scripts/services/build-sprite.js
-
 # Create dist/icons directory
 npx rimraf dist/icons
 mkdir dist/icons

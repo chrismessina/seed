@@ -2,6 +2,11 @@ import path from 'path'
 import cheerio from 'cheerio'
 import { minify } from 'html-minifier'
 
+function getSvgContents(svg) {
+    const $ = cheerio.load(svg)
+    return minify($('svg').html(), { collapseWhitespace: true, caseSensitive: true })
+}
+
 function buildIconsObject(svgFiles, getSvg) {
     return svgFiles
         .map(svgFile => {
@@ -14,11 +19,6 @@ function buildIconsObject(svgFiles, getSvg) {
             icons[icon.name] = icon.contents
             return icons
         }, {})
-}
-
-function getSvgContents(svg) {
-    const $ = cheerio.load(svg)
-    return minify($('svg').html(), { collapseWhitespace: true })
 }
 
 export default buildIconsObject

@@ -27,9 +27,7 @@ const Header = () => {
                     <LogoCont to="/">
                         <Logo />
                     </LogoCont>
-                    <VersionTag href={locale.links.npm}>
-                        v{version}
-                    </VersionTag>
+                    <VersionTag href={locale.links.npm}>v{version}</VersionTag>
                 </Flex>
                 <NavCont>
                     <NavLink
