@@ -24,7 +24,6 @@ export const IconCont = styled.div`
     min-height: 70px;
     border: 1px solid transparent;
     border-radius: ${p => p.theme.radii};
-    color: ${p => p.theme.colors.header};
 
     &:hover {
         border: 1px solid ${p => p.theme.colors.primary};

@@ -9,7 +9,6 @@ const defaultOptions = [
     { convertPathData: { noSpaceAfterFlags: false } },
     { mergePaths: false },
     { inlineStyles: { onlyMatchedOnce: false } },
-    { removeAttrs: { attrs: '(fill|stroke|clip-rule|fill-rule.*)' } },
     { removeTitle: true },
     { removeHiddenElems: false },
 ]

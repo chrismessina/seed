@@ -45,8 +45,8 @@ const lightTheme = {
         loose: 2,
     },
     colors: {
-        text: 'rgba(21, 21, 21, .65)',
-        header: 'rgba(21, 21, 21, .85)',
+        text: 'rgba(39, 45, 51, .65)',
+        header: 'rgba(39, 45, 51, .85)',
         background: '#FFF',
         primary: '#3CD1A5',
         primaryLight: 'rgba(60,209,165, .2)',
