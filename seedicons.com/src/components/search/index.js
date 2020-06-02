@@ -1,15 +1,16 @@
 import React from 'react'
 import { StyledSearch, SearchCont, SearchIcon } from './styled'
 import { Icon } from '../base'
+import locale from '../../locale/en'
 
-export const Search = ({ placeholder, value, onChange }) => {
+export const Search = ({ value, onChange }) => {
     const inputElement = React.useRef(null)
 
     return (
         <SearchCont>
             <SearchIcon>
                 <Icon
-                    content={`<path fill-rule="evenodd" clip-rule="evenodd" d="M11 4C7.13401 4 4 7.13401 4 11C4 14.866 7.13401 18 11 18C12.8859 18 14.5977 17.2542 15.8564 16.0414C15.8827 16.0072 15.9115 15.9742 15.9429 15.9429C15.9742 15.9115 16.0072 15.8827 16.0414 15.8564C17.2542 14.5977 18 12.8859 18 11C18 7.13401 14.866 4 11 4ZM18.0319 16.6177C19.2635 15.078 20 13.125 20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20C13.125 20 15.078 19.2635 16.6177 18.0319L20.2929 21.7071C20.6834 22.0976 21.3166 22.0976 21.7071 21.7071C22.0976 21.3166 22.0976 20.6834 21.7071 20.2929L18.0319 16.6177Z"/>`}
+                    content={`<path fill-rule="evenodd" clip-rule="evenodd" d="M8 22C8 14.268 14.268 8 22 8C29.732 8 36 14.268 36 22C36 25.7719 34.5083 29.1955 32.0827 31.7129C32.0143 31.7655 31.9485 31.8231 31.8858 31.8858C31.8232 31.9484 31.7655 32.0142 31.7129 32.0826C29.1955 34.5083 25.772 36 22 36C14.268 36 8 29.732 8 22ZM33.2354 36.0638C30.1561 38.527 26.25 40 22 40C12.0589 40 4 31.9411 4 22C4 12.0589 12.0589 4 22 4C31.9411 4 40 12.0589 40 22C40 26.25 38.5271 30.156 36.0638 33.2353L43.4143 40.5858C44.1953 41.3668 44.1953 42.6332 43.4143 43.4142C42.6332 44.1953 41.3669 44.1953 40.5858 43.4142L33.2354 36.0638Z" fill="black"/>`}
                     size={20}
                 />
             </SearchIcon>
@@ -17,9 +18,9 @@ export const Search = ({ placeholder, value, onChange }) => {
                 ref={inputElement}
                 type="search"
                 value={value}
-                placeholder={placeholder}
+                placeholder={locale.search.placeholder}
                 onChange={onChange}
-                aria-label="Search"
+                aria-label={locale.search.inputAria}
                 autoFocus
             />
         </SearchCont>

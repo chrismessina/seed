@@ -11,6 +11,7 @@ import {
     NavLink,
     VersionTag,
 } from './styled'
+import locale from '../../locale/en'
 import { version } from 'seed-icons/package.json'
 
 const Header = () => {
@@ -26,7 +27,7 @@ const Header = () => {
                     <LogoCont to="/">
                         <Logo />
                     </LogoCont>
-                    <VersionTag href="https://www.npmjs.com/package/seed-icons">
+                    <VersionTag href={locale.links.npm}>
                         v{version}
                     </VersionTag>
                 </Flex>
@@ -40,7 +41,7 @@ const Header = () => {
                     >
                         Icons
                     </NavLink>
-                    <ExternalNavLink href="https://github.com/seedicons/seed">
+                    <ExternalNavLink href={locale.links.github}>
                         Usage
                     </ExternalNavLink>
                     <ThemeSwitch
