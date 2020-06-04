@@ -13,6 +13,10 @@ export const SearchIcon = styled.div`
     display: flex;
     align-items: center;
     left: ${p => p.theme.space[3]};
+    
+    & > svg {
+        fill: ${p => p.theme.colors.text};
+    }
 `
 
 export const StyledSearch = styled.input`
