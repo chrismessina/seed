@@ -9,8 +9,6 @@ export const StyledHeader = styled.header`
     right: 0;
     background: ${p => p.theme.colors.background};
     z-index: 999;
-    transition: border 0.6s;
-    border-bottom: 1px solid transparent;
     justify-content: center;
 `
 
@@ -32,10 +30,12 @@ export const Container = styled.div`
 
 export const LogotypeCont = styled(Link)`
     display: flex;
-    width: 98px;
-    height: 32px;
     color: ${p => p.theme.colors.header};
     margin-right: ${p => p.theme.space[3]};
+
+    & > svg {
+        height: 42px;
+    }
 
     ${StyledHeader} & {
         @media (max-width: ${p => p.theme.breakpoints.small}) {
@@ -63,7 +63,7 @@ export const VersionTag = styled.a`
     background: ${p => p.theme.colors.primaryLight};
     padding: ${p => p.theme.space[1]} ${p => p.theme.space[2]};
     border-radius: ${p => p.theme.radii};
-    font-size: ${p => p.theme.fontSizes[0]};
+    font-size: ${p => p.theme.fontSizes[1]};
     font-weight: ${p => p.theme.fontWeights.medium};
     height: fit-content;
     text-decoration: none;
@@ -82,7 +82,7 @@ export const VersionTag = styled.a`
 export const NavCont = styled.nav`
     display: flex;
     align-items: center;
-    font-size: ${p => p.theme.fontSizes[2]};
+    font-size: ${p => p.theme.fontSizes[3]};
 `
 
 export const NavLink = styled(Link)`

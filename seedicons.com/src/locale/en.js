@@ -4,9 +4,9 @@ export default {
         github: 'https://github.com/seedicons/seed',
     },
     hero: {
-        headline: 'High quality SVG brand and app icons',
+        headline: 'High Quality Brand & App Icons',
         subhead:
-            'Optimized and consistently sized brand SVG icons for use in web, iOS, Android, and desktop apps. Download SVG icons below or get it up and running in your dev environment in 2 lines of code.',
+            'Seed icons is a full color, premium SVG app and brand icon set carefully crafted for designers and developers.'
     },
     search: {
         inputAria: 'Search icons',

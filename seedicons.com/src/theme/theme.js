@@ -71,8 +71,8 @@ const darkTheme = {
     ...lightTheme,
     colors: {
         ...lightTheme.colors,
-        text: 'rgba(255, 255, 255, .65)',
-        header: 'rgba(255, 255, 255, .85)',
+        text: 'rgba(255, 255, 255, .75)',
+        header: 'rgba(255, 255, 255, .95)',
         background: '#232323',
         primary: '#3CD1A5',
         stroke: '#444444',
