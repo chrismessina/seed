@@ -2,7 +2,6 @@ import Svgo from 'svgo'
 import cheerio from 'cheerio'
 import { format } from 'prettier'
 import DEFAULT_ATTRS from '../../package/default-attrs.json'
-import svgoOptions from '../../package/svgo-config'
 
 function setAttrs(svg) {
     const $ = cheerio.load(svg)
@@ -14,16 +13,20 @@ function setAttrs(svg) {
     return $('body').html()
 }
 
-const optimizeSvg = svg => {
+const optimizeSvg = (svg, path) => {
     const svgo = new Svgo({
-        plugins: svgoOptions,
+        plugins: [
+            { removeTitle: true },
+            { removeHiddenElems: false },
+            { cleanupIDs: { prefix: path } }
+        ]
     })
 
     return svgo.optimize(svg).then(({ data }) => data)
 }
 
-function processSvg(svg) {
-    return optimizeSvg(svg)
+function processSvg(svg, relativePath) {
+    return optimizeSvg(svg, relativePath)
         .then(setAttrs)
         .then(result => format(result, { parser: 'babel' }))
         .then(svg => svg.replace(/;/g, ''))

@@ -1,6 +1,5 @@
 import fs from 'fs'
 import path from 'path'
-
 import buildIconsObject from './build-icons-object'
 
 const IN_DIR = path.resolve(__dirname, '../../icons')
