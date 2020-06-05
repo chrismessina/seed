@@ -1,17 +1,8 @@
 import Svgo from 'svgo'
 import cheerio from 'cheerio'
 import { format } from 'prettier'
-
 import DEFAULT_ATTRS from '../../package/default-attrs.json'
-
-const defaultOptions = [
-    { convertShapeToPath: false },
-    { convertPathData: { noSpaceAfterFlags: false } },
-    { mergePaths: { noSpaceAfterFlags: false } },
-    { inlineStyles: { onlyMatchedOnce: false } },
-    { removeTitle: true },
-    { removeHiddenElems: false },
-]
+import svgoOptions from '../../package/svgo-config'
 
 function setAttrs(svg) {
     const $ = cheerio.load(svg)
@@ -25,7 +16,7 @@ function setAttrs(svg) {
 
 const optimizeSvg = svg => {
     const svgo = new Svgo({
-        plugins: defaultOptions,
+        plugins: svgoOptions,
     })
 
     return svgo.optimize(svg).then(({ data }) => data)

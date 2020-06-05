@@ -1,6 +1,5 @@
 import fs from 'fs'
 import path from 'path'
-
 import processSvg from './process-svg'
 
 const IN_DIR = path.resolve(__dirname, '../../icons')
