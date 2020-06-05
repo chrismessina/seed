@@ -18,7 +18,7 @@ const optimizeSvg = (svg, path) => {
         plugins: [
             { removeTitle: true },
             { removeHiddenElems: false },
-            { cleanupIDs: { prefix: path } }
+            { prefixIds: { prefix: path } }
         ]
     })
 

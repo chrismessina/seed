@@ -11,7 +11,7 @@
     width="40"
     height="40"
     rx="13.333"
-    fill="url(#paint0_linear)"
+    fill="url(#zoom_svg__paint0_linear)"
   />
   <path
     fill-rule="evenodd"
@@ -21,7 +21,7 @@
   />
   <defs>
     <linearGradient
-      id="paint0_linear"
+      id="zoom_svg__paint0_linear"
       x1="24"
       y1="4"
       x2="24"
