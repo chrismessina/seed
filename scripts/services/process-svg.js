@@ -14,19 +14,21 @@ function setAttrs(svg) {
 }
 
 const optimizeSvg = (svg, path) => {
+    const uniqueId = path.replace(/.svg/g, '')
+
     const svgo = new Svgo({
         plugins: [
             { removeTitle: true },
             { removeHiddenElems: false },
-            { prefixIds: { prefix: path } }
+            { prefixIds: { prefix: uniqueId}}
         ]
     })
 
     return svgo.optimize(svg).then(({ data }) => data)
-}
+} 
 
-function processSvg(svg, relativePath) {
-    return optimizeSvg(svg, relativePath)
+function processSvg(svg, path) {
+    return optimizeSvg(svg, path)
         .then(setAttrs)
         .then(result => format(result, { parser: 'babel' }))
         .then(svg => svg.replace(/;/g, ''))

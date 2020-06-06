@@ -8,13 +8,13 @@
   <path
     d="M24 44c11.046 0 20-8.954 20-20S35.046 4 24 4 4 12.954 4 24s8.954 20 20 20z"
     fill="#DD5044"
-    stroke="url(#google-plus_svg__paint0_linear)"
+    stroke="url(#google-plus__google-plus__google-plus__undefined__undefined__undefined__paint0_linear)"
     stroke-width=".853"
   />
   <path
     opacity=".524"
     d="M18.569 14.724c-5.044 0-9.133 4.16-9.133 9.293a9.346 9.346 0 002.732 6.628l13.298 13.299A20 20 0 0043.64 27.716l-7.641-7.641H33.38v2.679h-2.679v.065L25 17.116c-1.715-1.646-3.91-2.391-6.43-2.391h-.001v-.001z"
-    fill="url(#google-plus_svg__paint1_linear)"
+    fill="url(#google-plus__google-plus__google-plus__undefined__undefined__undefined__paint1_linear)"
   />
   <path
     d="M18.569 14.724c-5.044 0-9.133 4.16-9.133 9.293 0 5.132 4.089 9.293 9.133 9.293 3.285 0 5.19-1.034 6.842-2.716 1.652-1.681 2.254-4.225 2.254-6.791 0-.392-.025-.781-.07-1.166H18.68v3.285h5.237c-.213.82-.574 1.566-1.142 2.144-1.018 1.036-2.19 1.673-4.213 1.673-3.106 0-5.623-2.562-5.623-5.722 0-3.16 2.517-5.722 5.623-5.722 1.51 0 2.827.44 3.87 1.396l2.571-2.57-.004-.005c-1.715-1.646-3.909-2.391-6.43-2.391v-.001zm14.812 5.35v2.68h-2.679v2.617h2.68v2.68h2.617v-2.68h2.679v-2.617h-2.68v-2.68h-2.617zm-10.03.76a.032.032 0 01.004.009v-.004l-.004-.004z"
@@ -22,7 +22,7 @@
   />
   <defs>
     <linearGradient
-      id="google-plus_svg__paint0_linear"
+      id="google-plus__google-plus__google-plus__undefined__undefined__undefined__paint0_linear"
       x1="28.189"
       y1="3.245"
       x2="28.189"
@@ -33,7 +33,7 @@
       <stop offset="1" stop-color="#B03B30" />
     </linearGradient>
     <linearGradient
-      id="google-plus_svg__paint1_linear"
+      id="google-plus__google-plus__google-plus__undefined__undefined__undefined__paint1_linear"
       x1="11.091"
       y1="16.182"
       x2="36.816"
