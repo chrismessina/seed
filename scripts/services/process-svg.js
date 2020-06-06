@@ -5,7 +5,6 @@ import DEFAULT_ATTRS from '../../package/default-attrs.json'
 
 function setAttrs(svg) {
   const $ = cheerio.load(svg)
-
   Object.keys(DEFAULT_ATTRS).forEach((key) =>
     $('svg').attr(key, DEFAULT_ATTRS[key])
   )
@@ -14,13 +13,13 @@ function setAttrs(svg) {
 }
 
 const optimizeSvg = (svg, path) => {
-  const uniquePrefix = path.replace(/.svg/g, '')
+  const uniquePrefix = path.replace(/.svg/, '')
   const svgo = new Svgo({
     plugins: [
       { prefixIds: { prefix: uniquePrefix } },
       { cleanupIDs: { force: true } },
       { sortAttrs: true },
-      { removeAttrs: { attrs: 'svg:fill:none' } }
+      { removeAttrs: { attrs: 'svg:fill:none' } },
     ],
   })
 

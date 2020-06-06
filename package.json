@@ -1,6 +1,6 @@
 {
   "name": "seed-icons",
-  "version": "1.0.20",
+  "version": "1.0.21",
   "description": "Open source icons in their simplest form.",
   "main": "dist/seed.js",
   "unpkg": "dist/seed.min.js",
@@ -10,7 +10,7 @@
   "scripts": {
     "build": "./scripts/build.sh",
     "official": "npm run build && npm publish",
-    "format": "npx prettier --check --write ."
+    "format": "npx prettier --check --write package scripts seedicons.com/src"
   },
   "repository": {
     "type": "git",
