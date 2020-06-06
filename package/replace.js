@@ -9,7 +9,7 @@ function replace(attrs = {}) {
 
   const elementsToReplace = document.querySelectorAll('[data-seed]')
 
-  Array.from(elementsToReplace).forEach(element =>
+  Array.from(elementsToReplace).forEach((element) =>
     replaceElement(element, attrs)
   )
 }
@@ -21,7 +21,7 @@ function replaceElement(element, attrs = {}) {
   const svgString = icons[name].toSvg({
     ...attrs,
     ...elementAttrs,
-    ...{ class: classnames(attrs.class, elementAttrs.class) }
+    ...{ class: classnames(attrs.class, elementAttrs.class) },
   })
 
   const svgDocument = new DOMParser().parseFromString(svgString, 'text/html')

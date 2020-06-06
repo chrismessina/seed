@@ -10,28 +10,28 @@ import { IconGrid } from '../components/icons'
 import useSearch from '../utils/useSearch'
 
 function IndexPage({ location }) {
-    const [query, setQuery] = useQueryParam(
-        'query',
-        StringParam,
-        parse(location.search)
-    )
+  const [query, setQuery] = useQueryParam(
+    'query',
+    StringParam,
+    parse(location.search)
+  )
 
-    const results = useSearch(query || '')
+  const results = useSearch(query || '')
 
-    return (
-        <MyThemeProvider>
-            <Layout>
-                <SEO title="Home" />
-                <Hero />
-                <Search
-                    placeholder={`Search icons...`}
-                    value={query || ''}
-                    onChange={event => setQuery(event.target.value)}
-                />
-                <IconGrid icons={results} />
-            </Layout>
-        </MyThemeProvider>
-    )
+  return (
+    <MyThemeProvider>
+      <Layout>
+        <SEO title="Home" />
+        <Hero />
+        <Search
+          placeholder={`Search icons...`}
+          value={query || ''}
+          onChange={(event) => setQuery(event.target.value)}
+        />
+        <IconGrid icons={results} />
+      </Layout>
+    </MyThemeProvider>
+  )
 }
 
 export default IndexPage

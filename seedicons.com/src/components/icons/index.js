@@ -5,32 +5,28 @@ import copy from 'copy-to-clipboard'
 import download from 'downloadjs'
 
 export function IconGrid({ icons }) {
-    const iconArr = Object.values(icons)
+  const iconArr = Object.values(icons)
 
-    return (
-        <Content>
-            <IconsGrid>
-                {iconArr.map(icon => (
-                    <IconCont
-                        key={icon.name}
-                        title={`Download ${icon.name}.svg`}
-                        onClick={event => {
-                            if (event.shiftKey) {
-                                copy(icon.toSvg())
-                            } else {
-                                download(
-                                    icon.toSvg(),
-                                    `${icon.name}.svg`,
-                                    'image/svg+xml'
-                                )
-                            }
-                        }}
-                    >
-                        <Icon content={icon.contents} size={48} />
-                        <Tooltip>{icon.name}</Tooltip>
-                    </IconCont>
-                ))}
-            </IconsGrid>
-        </Content>
-    )
+  return (
+    <Content>
+      <IconsGrid>
+        {iconArr.map((icon) => (
+          <IconCont
+            key={icon.name}
+            title={`Download ${icon.name}.svg`}
+            onClick={(event) => {
+              if (event.shiftKey) {
+                copy(icon.toSvg())
+              } else {
+                download(icon.toSvg(), `${icon.name}.svg`, 'image/svg+xml')
+              }
+            }}
+          >
+            <Icon content={icon.contents} size={48} />
+            <Tooltip>{icon.name}</Tooltip>
+          </IconCont>
+        ))}
+      </IconsGrid>
+    </Content>
+  )
 }

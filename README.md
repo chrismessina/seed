@@ -56,4 +56,5 @@ npm i seed-icons
 Testing one two
 
 ### Credits
+
 This project is one big mashup and homage to [Feather](https://github.com/feathericons/feather), [Ionicons](https://github.com/ionic-team/ionicons), and [Eva Icons](https://akveo.github.io/eva-icons/#/). I started this project as something to work on while I learn React/Gatsby and inspecting those projects as I learn has been truly invaluable. Anything impressive is probably code from them I didn't change. Anything that barely works is probably from yours truly.

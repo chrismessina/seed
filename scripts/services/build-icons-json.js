@@ -6,10 +6,10 @@ const IN_DIR = path.resolve(__dirname, '../../icons')
 const OUT_FILE = path.resolve(__dirname, '../../dist/icons.json')
 
 const svgFiles = fs
-    .readdirSync(IN_DIR)
-    .filter(file => path.extname(file) === '.svg')
+  .readdirSync(IN_DIR)
+  .filter((file) => path.extname(file) === '.svg')
 
-const getSvg = svgFile => fs.readFileSync(path.join(IN_DIR, svgFile))
+const getSvg = (svgFile) => fs.readFileSync(path.join(IN_DIR, svgFile))
 
 const icons = buildIconsObject(svgFiles, getSvg)
 
