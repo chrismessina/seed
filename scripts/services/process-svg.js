@@ -20,6 +20,7 @@ const optimizeSvg = (svg, path) => {
       { prefixIds: { prefix: uniquePrefix } },
       { cleanupIDs: { force: true } },
       { sortAttrs: true },
+      { removeAttrs: { attrs: 'svg:fill:none' } }
     ],
   })
 
