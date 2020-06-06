@@ -20,7 +20,7 @@
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
     "react-switch": "^5.0.1",
-    "seed-icons": "^1.0.20",
+    "seed-icons": "^1.0.21",
     "use-query-params": "^0.4.4"
   },
   "devDependencies": {
