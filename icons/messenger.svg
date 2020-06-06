@@ -6,23 +6,23 @@
   viewBox="0 0 48 48"
 >
   <path
+    fill="url(#messenger__a)"
     fill-rule="evenodd"
-    clip-rule="evenodd"
     d="M24 4C12.732 4 4 12.253 4 23.4c0 5.831 2.39 10.87 6.282 14.35.326.294.523.7.539 1.139l.109 3.557a1.603 1.603 0 002.245 1.417l3.968-1.75a1.596 1.596 0 011.066-.081c1.823.503 3.767.768 5.79.768 11.268 0 20-8.253 20-19.4C44 12.253 35.267 4 24 4z"
-    fill="url(#messenger__messenger__messenger__undefined__undefined__undefined__paint0_linear)"
+    clip-rule="evenodd"
   />
   <path
-    fill-rule="evenodd"
-    clip-rule="evenodd"
-    d="M11.992 29.075l5.875-9.32a3.003 3.003 0 014.338-.801l4.672 3.505a1.202 1.202 0 001.445-.004l6.31-4.789c.84-.64 1.944.37 1.376 1.264l-5.871 9.316a3.003 3.003 0 01-4.338.8l-4.672-3.505a1.201 1.201 0 00-1.445.005l-6.313 4.792c-.841.64-1.944-.37-1.377-1.263z"
     fill="#fff"
+    fill-rule="evenodd"
+    d="M11.992 29.075l5.875-9.32a3.003 3.003 0 014.338-.801l4.672 3.505a1.202 1.202 0 001.445-.004l6.31-4.789c.84-.64 1.944.37 1.376 1.264l-5.871 9.316a3.003 3.003 0 01-4.338.8l-4.672-3.505a1.201 1.201 0 00-1.445.005l-6.313 4.792c-.841.64-1.944-.37-1.377-1.263z"
+    clip-rule="evenodd"
   />
   <defs>
     <linearGradient
-      id="messenger__messenger__messenger__undefined__undefined__undefined__paint0_linear"
+      id="messenger__a"
       x1="24"
-      y1="4"
       x2="24"
+      y1="4"
       y2="43.999"
       gradientUnits="userSpaceOnUse"
     >

@@ -14,13 +14,11 @@ function setAttrs(svg) {
 }
 
 const optimizeSvg = (svg, path) => {
-    const uniqueId = path.replace(/.svg/g, '')
-
+    const uniquePrefix = path.replace(/.svg/g, '')
     const svgo = new Svgo({
         plugins: [
-            { removeTitle: true },
-            { removeHiddenElems: false },
-            { prefixIds: { prefix: uniqueId}}
+            { prefixIds: { prefix: uniquePrefix } },
+            { cleanupIDs: { force: true } }
         ]
     })
 
@@ -35,3 +33,5 @@ function processSvg(svg, path) {
 }
 
 export default processSvg
+
+
