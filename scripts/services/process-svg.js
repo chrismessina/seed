@@ -18,7 +18,8 @@ const optimizeSvg = (svg, path) => {
     const svgo = new Svgo({
         plugins: [
             { prefixIds: { prefix: uniquePrefix } },
-            { cleanupIDs: { force: true } }
+            { cleanupIDs: { force: true } },
+            { sortAttrs: true }
         ]
     })
 
