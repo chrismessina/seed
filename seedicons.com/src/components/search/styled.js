@@ -1,9 +1,14 @@
 import styled from 'styled-components'
 
 export const SearchCont = styled.div`
-  position: relative;
+  display: flex;
   max-width: ${(p) => p.theme.breakpoints.medium};
   margin: 0 auto ${(p) => p.theme.space[6]};
+`
+
+export const SearchInput = styled.div`
+  position: relative;
+  width: 100%;
 `
 
 export const SearchIcon = styled.div`
@@ -28,4 +33,20 @@ export const StyledSearch = styled.input`
   border: 0;
   border-radius: ${(p) => p.theme.radii};
   background: ${(p) => p.theme.colors.backgroundLight};
+`
+
+export const DownloadButton = styled.button`
+  margin: 0 0 0 ${(p) => p.theme.space[3]};
+  background: ${(p) => p.theme.colors.primary};
+  color: ${(p) => p.theme.colors.background};
+  border-radius: ${(p) => p.theme.radii};
+  border: none;
+  white-space: nowrap;
+  padding: 0 ${(p) => p.theme.space[5]};
+
+  ${SearchCont} & {
+    @media (max-width: ${(p) => p.theme.breakpoints.small}) {
+      display: none;
+    }
+  }
 `

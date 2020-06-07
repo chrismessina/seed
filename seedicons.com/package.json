@@ -26,14 +26,6 @@
   "devDependencies": {
     "babel-eslint": "^10.0.3",
     "babel-plugin-styled-components": "^1.10.6",
-    "eslint": "^6.8.0",
-    "eslint-config-prettier": "6.0.0",
-    "eslint-config-react-app": "^5.1.0",
-    "eslint-plugin-import": "2.18.0",
-    "eslint-plugin-jsx-a11y": "6.2.3",
-    "eslint-plugin-prettier": "3.1.0",
-    "eslint-plugin-react": "^7.17.0",
-    "eslint-plugin-react-hooks": "^1.6.1",
     "prettier": "^1.19.1",
     "prop-types": "^15.7.2",
     "styled-components": "^4.4.1"
@@ -42,7 +34,6 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "eslint . --fix",
     "start": "npm run develop"
   },
   "repository": {

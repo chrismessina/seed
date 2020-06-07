@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Seed Icons`,
-    description: `Open source icons in their simplest form.`,
+    description: `High quality brand & app icons.`,
     author: `@_rossmoody`,
     link: `<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">`,
   },
@@ -21,7 +21,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `seed-icons`,
-        short_name: `Open source icons in their simplest form.`,
+        short_name: `High quality brand & app icons.`,
         start_url: `/`,
         icon: `src/static/favicon.png`,
       },

@@ -21,7 +21,7 @@ const Header = () => {
     <StyledHeader>
       <Container>
         <Flex ai={'center'}>
-          <LogotypeCont to={locale.nav.hrefs.home} tabIndex="1">
+          <LogotypeCont to={locale.nav.hrefs.home}>
             <Logotype />
           </LogotypeCont>
           <LogoCont to={locale.nav.hrefs.home}>
