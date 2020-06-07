@@ -35,7 +35,7 @@ export const StyledSearch = styled.input`
   background: ${(p) => p.theme.colors.backgroundLight};
 
   &:focus {
-    box-shadow: ${p => p.theme.colors.focus};
+    box-shadow: ${(p) => p.theme.colors.focus};
     outline: none;
   }
 `
@@ -55,7 +55,7 @@ export const DownloadButton = styled.button`
   }
 
   &:focus {
-    box-shadow: ${p => p.theme.colors.focus};
+    box-shadow: ${(p) => p.theme.colors.focus};
     outline: none;
   }
 

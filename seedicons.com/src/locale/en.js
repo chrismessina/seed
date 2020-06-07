@@ -24,7 +24,7 @@ export default {
     inputAria: 'Search icons',
     placeholder: 'Filter by keyword',
     download: 'Download',
-    icons: 'icons'
+    icons: 'icons',
   },
   note: {
     download: 'Click icon to download SVG',

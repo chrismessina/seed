@@ -14,8 +14,8 @@ import locale from '../../locale/en'
 
 function generateZip() {
   const zip = new JSZip()
-  Object.values(icons).forEach(icon =>
-    zip.file(`${icon.name}.svg`, icon.toSvg()),
+  Object.values(icons).forEach((icon) =>
+    zip.file(`${icon.name}.svg`, icon.toSvg())
   )
   return zip.generateAsync({ type: 'blob' })
 }
@@ -24,8 +24,8 @@ export const Search = ({ value, onChange }) => {
   const inputElement = React.useRef(null)
 
   React.useEffect(() => {
-    inputElement.current.focus();
-  }, [value]);
+    inputElement.current.focus()
+  }, [value])
 
   return (
     <SearchCont>
@@ -45,11 +45,14 @@ export const Search = ({ value, onChange }) => {
           placeholder={locale.search.placeholder}
         />
       </SearchInput>
-      <DownloadButton onClick={async () => {
-        const zip = await generateZip()
-        download(zip, 'seed.zip')
-      }}>
-        {locale.search.download} {Object.keys(icons).length} {locale.search.icons}
+      <DownloadButton
+        onClick={async () => {
+          const zip = await generateZip()
+          download(zip, 'seed.zip')
+        }}
+      >
+        {locale.search.download} {Object.keys(icons).length}{' '}
+        {locale.search.icons}
       </DownloadButton>
     </SearchCont>
   )
