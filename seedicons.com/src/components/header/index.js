@@ -3,7 +3,6 @@ import { useTheme } from '../../theme/theme-context'
 import { Flex, Logotype, Logo, ThemeSwitch } from '../base'
 import {
   StyledHeader,
-  ExternalNavLink,
   Container,
   LogotypeCont,
   LogoCont,

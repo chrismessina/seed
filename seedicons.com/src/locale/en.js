@@ -12,7 +12,7 @@ export default {
     hrefs: {
       home: '/',
       usage: '/usage',
-      tools: '#',
+      tools: '/',
     },
   },
   hero: {
@@ -23,6 +23,8 @@ export default {
   search: {
     inputAria: 'Search icons',
     placeholder: 'Filter by keyword',
+    download: 'Download',
+    icons: 'icons'
   },
   note: {
     download: 'Click icon to download SVG',

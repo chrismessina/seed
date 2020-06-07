@@ -33,6 +33,11 @@ export const StyledSearch = styled.input`
   border: 0;
   border-radius: ${(p) => p.theme.radii};
   background: ${(p) => p.theme.colors.backgroundLight};
+
+  &:focus {
+    box-shadow: ${p => p.theme.colors.focus};
+    outline: none;
+  }
 `
 
 export const DownloadButton = styled.button`
@@ -47,6 +52,11 @@ export const DownloadButton = styled.button`
 
   &:hover {
     cursor: pointer;
+  }
+
+  &:focus {
+    box-shadow: ${p => p.theme.colors.focus};
+    outline: none;
   }
 
   ${SearchCont} & {
