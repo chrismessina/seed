@@ -11,7 +11,7 @@ export default {
     },
     hrefs: {
       home: '/',
-      usage: '#',
+      usage: '/usage',
       tools: '#',
     },
   },
@@ -22,6 +22,11 @@ export default {
   },
   search: {
     inputAria: 'Search icons',
-    placeholder: 'Filter brand icons by keyword',
+    placeholder: 'Filter by keyword',
+  },
+  note: {
+    download: 'Click icon to download SVG',
+    or: '||',
+    copy: 'Shift + Click to copy to clipboard',
   },
 }

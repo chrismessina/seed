@@ -36,13 +36,18 @@ export const StyledSearch = styled.input`
 `
 
 export const DownloadButton = styled.button`
-  margin: 0 0 0 ${(p) => p.theme.space[3]};
+  margin: 0 0 0 ${(p) => p.theme.space[2]};
   background: ${(p) => p.theme.colors.primary};
+  font-weight: ${(p) => p.theme.fontWeights.medium};
   color: ${(p) => p.theme.colors.background};
   border-radius: ${(p) => p.theme.radii};
   border: none;
   white-space: nowrap;
-  padding: 0 ${(p) => p.theme.space[5]};
+  padding: 0 ${(p) => p.theme.space[4]};
+
+  &:hover {
+    cursor: pointer;
+  }
 
   ${SearchCont} & {
     @media (max-width: ${(p) => p.theme.breakpoints.small}) {

@@ -7,6 +7,7 @@ import { MyThemeProvider } from '../theme/theme-context'
 import { Hero } from '../components/hero'
 import { Search } from '../components/search'
 import { IconGrid } from '../components/icons'
+import { Note } from '../components/note'
 import useSearch from '../utils/useSearch'
 
 function IndexPage({ location }) {
@@ -24,10 +25,10 @@ function IndexPage({ location }) {
         <SEO title="Home" />
         <Hero />
         <Search
-          placeholder={`Search icons...`}
           value={query || ''}
           onChange={(event) => setQuery(event.target.value)}
         />
+        <Note />
         <IconGrid icons={results} />
       </Layout>
     </MyThemeProvider>

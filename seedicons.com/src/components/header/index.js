@@ -39,12 +39,24 @@ const Header = () => {
           >
             {locale.nav.strings.home}
           </NavLink>
-          <ExternalNavLink href={locale.nav.hrefs.usage}>
+          <NavLink
+            to={locale.nav.hrefs.usage}
+            activeStyle={{
+              color: '#3CD1A5',
+              textDecoration: 'none',
+            }}
+          >
             {locale.nav.strings.usage}
-          </ExternalNavLink>
-          <ExternalNavLink href={locale.nav.hrefs.tools}>
+          </NavLink>
+          <NavLink
+            to={locale.nav.hrefs.tools}
+            activeStyle={{
+              color: '#3CD1A5',
+              textDecoration: 'none',
+            }}
+          >
             {locale.nav.strings.tools}
-          </ExternalNavLink>
+          </NavLink>
           <ThemeSwitch storage={themeToggle} func={themeToggle.toggle} />
         </NavCont>
       </Container>
