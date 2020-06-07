@@ -26,6 +26,13 @@ export const Container = styled.div`
       margin: 0;
     }
   }
+
+  ${StyledHeader} & {
+    @media (max-width: ${(p) => p.theme.breakpoints.small}) {
+      padding: ${(p) => p.theme.space[2]} ${(p) => p.theme.space[5]};
+      border-bottom: 1px solid ${(p) => p.theme.colors.stroke};
+    }
+  }
 `
 
 export const LogotypeCont = styled(Link)`
@@ -33,8 +40,8 @@ export const LogotypeCont = styled(Link)`
   color: ${(p) => p.theme.colors.header};
   margin-right: ${(p) => p.theme.space[3]};
 
-  & > svg {
-    height: 42px;
+  & svg {
+    height: 40px;
   }
 
   ${StyledHeader} & {
@@ -45,9 +52,11 @@ export const LogotypeCont = styled(Link)`
 `
 
 export const LogoCont = styled(Link)`
-  width: 32px;
-  height: 32px;
   display: none;
+
+  & svg {
+    height: 40px;
+  }
 
   ${StyledHeader} & {
     @media (max-width: ${(p) => p.theme.breakpoints.small}) {

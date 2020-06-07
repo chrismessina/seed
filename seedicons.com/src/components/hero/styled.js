@@ -21,13 +21,13 @@ export const StyledHero = styled.div`
   }
 
   & h2 {
-    font-size: ${(p) => p.theme.fontSizes[6]};
+    font-size: ${(p) => p.theme.fontSizes[5]};
     line-height: ${(p) => p.theme.lineHeights.normal};
     font-weight: 400;
     margin: ${(p) => p.theme.space[2]} 0 ${(p) => p.theme.space[5]};
 
     @media (max-width: ${(p) => p.theme.breakpoints.medium}) {
-      font-size: ${(p) => p.theme.fontSizes[3]};
+      font-size: ${(p) => p.theme.fontSizes[4]};
     }
   }
 `

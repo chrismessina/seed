@@ -3,10 +3,22 @@ export default {
     npm: 'https://www.npmjs.com/package/seed-icons',
     github: 'https://github.com/seedicons/seed',
   },
+  nav: {
+    strings: {
+      home: 'Icons',
+      usage: 'Usage',
+      tools: 'Design tools',
+    },
+    hrefs: {
+      home: '/',
+      usage: '#',
+      tools: '#',
+    },
+  },
   hero: {
-    headline: 'High Quality Brand & App Icons',
+    headline: 'High quality brand & app icons',
     subhead:
-      'Seed icons is a full color, premium SVG app and brand icon set carefully crafted for designers and developers.',
+      'Premium icons for use in web, iOS, Android, and desktop apps. Meticulously designed and optimized to help speed up projects for designers and developers.',
   },
   search: {
     inputAria: 'Search icons',

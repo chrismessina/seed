@@ -40,7 +40,7 @@ const Logotype = () => {
 
 const Logo = () => {
   return (
-    <StyledLogo>
+    <StyledLogo viewBox="0 0 32 32">
       <circle
         cx="15.507"
         cy="15.507"

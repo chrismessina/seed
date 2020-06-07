@@ -1,0 +1,107 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="48"
+  height="48"
+  viewBox="0 0 48 48"
+>
+  <path
+    fill="url(#google-play__a)"
+    fill-rule="evenodd"
+    d="M6.71 4.613C6.26 5.097 6 5.84 6 6.807v34.38c0 .966.26 1.71.727 2.176l.122.103 19.32-19.263v-.433L6.832 4.51l-.122.103z"
+    clip-rule="evenodd"
+  />
+  <path
+    fill="url(#google-play__b)"
+    fill-rule="evenodd"
+    d="M32.597 30.649l-6.444-6.428v-.45l6.446-6.427.14.086 7.624 4.32c2.183 1.228 2.183 3.249 0 4.493l-7.625 4.32c-.002 0-.141.086-.141.086z"
+    clip-rule="evenodd"
+  />
+  <path
+    fill="url(#google-play__c)"
+    fill-rule="evenodd"
+    d="M32.736 30.563l-6.583-6.566L6.71 43.382c.71.76 1.905.847 3.241.103l22.785-12.922z"
+    clip-rule="evenodd"
+  />
+  <path
+    fill="url(#google-play__d)"
+    fill-rule="evenodd"
+    d="M32.736 17.433L9.951 4.527c-1.334-.76-2.53-.657-3.24.103l19.44 19.367 6.585-6.564z"
+    clip-rule="evenodd"
+  />
+  <path
+    fill="#000"
+    fill-rule="evenodd"
+    d="M32.597 30.424L9.968 43.244c-1.264.724-2.392.674-3.119.016l-.122.122.122.103c.727.656 1.855.708 3.12-.017l22.784-12.905-.156-.139z"
+    clip-rule="evenodd"
+    opacity=".2"
+  />
+  <path
+    fill="#000"
+    fill-rule="evenodd"
+    d="M40.36 26.018l-7.78 4.406.14.139 7.624-4.32c1.091-.622 1.629-1.433 1.629-2.246-.07.744-.624 1.452-1.613 2.021z"
+    clip-rule="evenodd"
+    opacity=".12"
+  />
+  <path
+    fill="#fff"
+    fill-rule="evenodd"
+    d="M9.951 4.752l30.41 17.225c.988.553 1.542 1.278 1.629 2.022 0-.811-.538-1.624-1.63-2.246L9.952 4.527C7.768 3.283 6 4.32 6 6.807v.225c0-2.488 1.768-3.507 3.951-2.28z"
+    clip-rule="evenodd"
+    opacity=".25"
+  />
+  <defs>
+    <linearGradient
+      id="google-play__a"
+      x1="24.423"
+      x2="-6.481"
+      y1="6.448"
+      y2="14.703"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop stop-color="#00A0FF" />
+      <stop offset=".007" stop-color="#00A1FF" />
+      <stop offset=".26" stop-color="#00BEFF" />
+      <stop offset=".512" stop-color="#00D2FF" />
+      <stop offset=".76" stop-color="#00DFFF" />
+      <stop offset="1" stop-color="#00E3FF" />
+    </linearGradient>
+    <linearGradient
+      id="google-play__b"
+      x1="43.203"
+      x2="5.469"
+      y1="23.991"
+      y2="23.991"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop stop-color="#FFE000" />
+      <stop offset=".409" stop-color="#FFBD00" />
+      <stop offset=".775" stop-color="orange" />
+      <stop offset="1" stop-color="#FF9C00" />
+    </linearGradient>
+    <linearGradient
+      id="google-play__c"
+      x1="29.159"
+      x2="4.398"
+      y1="27.563"
+      y2="69.312"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop stop-color="#FF3A44" />
+      <stop offset="1" stop-color="#C31162" />
+    </linearGradient>
+    <linearGradient
+      id="google-play__d"
+      x1="1.812"
+      x2="12.86"
+      y1="-6.836"
+      y2="11.796"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop stop-color="#32A071" />
+      <stop offset=".069" stop-color="#2DA771" />
+      <stop offset=".476" stop-color="#15CF74" />
+      <stop offset=".801" stop-color="#06E775" />
+      <stop offset="1" stop-color="#00F076" />
+    </linearGradient>
+  </defs>
+</svg>
