@@ -7,21 +7,20 @@ import {
   DownloadButton,
 } from './styled'
 import { Icon } from '../base'
-import { icons } from 'seed-icons'
 import JSZip from 'jszip'
 import download from 'downloadjs'
 import locale from '../../locale/en'
 
-function generateZip() {
+function generateZip(iconResults) {
   const zip = new JSZip()
 
-  Object.values(icons).forEach((icon) =>
+  Object.values(iconResults).forEach((icon) =>
     zip.file(`${icon.name}.svg`, icon.toSvg())
   )
   return zip.generateAsync({ type: 'blob' })
 }
 
-export const Search = ({ value, onChange }) => {
+export const Search = ({ value, onChange, iconResults }) => {
   const inputElement = React.useRef(null)
 
   React.useEffect(() => {
@@ -48,12 +47,11 @@ export const Search = ({ value, onChange }) => {
       </SearchInput>
       <DownloadButton
         onClick={async () => {
-          const zip = await generateZip()
+          const zip = await generateZip(iconResults)
           download(zip, 'seed.zip')
         }}
       >
-        {locale.search.download} {Object.keys(icons).length}{' '}
-        {locale.search.icons}
+        {locale.search.download} {iconResults.length} {locale.search.icons}
       </DownloadButton>
     </SearchCont>
   )

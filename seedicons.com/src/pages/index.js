@@ -27,6 +27,7 @@ function IndexPage({ location }) {
         <Search
           value={query || ''}
           onChange={(event) => setQuery(event.target.value)}
+          iconResults={results}
         />
         <Note />
         <IconGrid icons={results} />
