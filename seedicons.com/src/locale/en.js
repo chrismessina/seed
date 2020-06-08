@@ -18,7 +18,7 @@ export default {
   hero: {
     headline: 'High quality brand & app icons',
     subhead:
-      'Premium icons for use in web, iOS, Android, and desktop apps. Meticulously designed and optimized to help speed up projects for designers and developers.',
+      'Premium SVG icons for use in web, iOS, Android, and desktop apps. Meticulously designed and optimized to help speed up projects for designers and developers.',
   },
   search: {
     inputAria: 'Search icons',

@@ -14,6 +14,7 @@ import locale from '../../locale/en'
 
 function generateZip() {
   const zip = new JSZip()
+
   Object.values(icons).forEach((icon) =>
     zip.file(`${icon.name}.svg`, icon.toSvg())
   )
