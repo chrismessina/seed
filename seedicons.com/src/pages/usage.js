@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import { Usage } from '../components/usage'
+import Usage from '../components/usage/usage'
 import { MyThemeProvider } from '../theme/theme-context'
 
 const SecondPage = () => (
