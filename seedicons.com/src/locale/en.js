@@ -2,6 +2,9 @@ export default {
   links: {
     npm: 'https://www.npmjs.com/package/seed-icons',
     github: 'https://github.com/seedicons/seed',
+    unpkg: 'https://unpkg.com/seed-icons',
+    twitter: 'https://twitter.com/_rossmoody',
+    issues: 'https://github.com/seedicons/seed/issues/new/choose',
   },
   nav: {
     strings: {
@@ -18,7 +21,7 @@ export default {
   hero: {
     headline: 'High quality brand & app icons',
     subhead:
-      'Premium SVG icons for use in web, iOS, Android, and desktop apps. Meticulously designed and optimized to help speed up projects for designers and developers.',
+      'Seed is a premium SVG icon set for use in web, iOS, Android, and desktop apps. Designed and optimized to help speed up projects for designers and developers.',
   },
   search: {
     inputAria: 'Search icons',
@@ -30,5 +33,13 @@ export default {
     download: 'Click icon to download SVG',
     or: '||',
     copy: 'Shift + Click to copy to clipboard',
+  },
+  footer: {
+    request: 'Request an icon',
+    contribute: 'Contribute',
+    github: 'GitHub',
+    npm: 'npm',
+    madeBy: 'Made by',
+    handle: '@_rossmoody',
   },
 }
