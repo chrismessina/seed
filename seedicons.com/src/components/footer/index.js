@@ -19,7 +19,7 @@ export const Footer = () => {
       </FooterLinkCont>
       <FooterLinkCont>
         <span>{locale.footer.madeBy}</span>
-        <FooterLink margin={'0 0 0 6px'} href="#">
+        <FooterLink margin={'0 0 0 6px'} href={locale.links.twitter}>
           {locale.footer.handle}
         </FooterLink>
       </FooterLinkCont>

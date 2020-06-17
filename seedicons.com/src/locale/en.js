@@ -9,8 +9,8 @@ export default {
   nav: {
     strings: {
       home: 'Icons',
-      usage: 'Usage',
-      tools: 'Design tools',
+      usage: 'Code',
+      tools: 'Design',
     },
     hrefs: {
       home: '/',
