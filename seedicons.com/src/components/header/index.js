@@ -7,8 +7,8 @@ import {
   LogotypeCont,
   LogoCont,
   NavCont,
-  NavLink,
   VersionTag,
+  ExternalNavLink,
 } from './styled'
 import locale from '../../locale/en'
 import { version } from 'seed-icons/package.json'
@@ -29,33 +29,9 @@ const Header = () => {
           <VersionTag href={locale.links.npm}>v{version}</VersionTag>
         </Flex>
         <NavCont>
-          <NavLink
-            to={locale.nav.hrefs.home}
-            activeStyle={{
-              color: '#3CD1A5',
-              textDecoration: 'none',
-            }}
-          >
-            {locale.nav.strings.home}
-          </NavLink>
-          <NavLink
-            to={locale.nav.links.github}
-            activeStyle={{
-              color: '#3CD1A5',
-              textDecoration: 'none',
-            }}
-          >
+          <ExternalNavLink href={locale.links.github}>
             {locale.nav.strings.usage}
-          </NavLink>
-          <NavLink
-            to={locale.nav.hrefs.tools}
-            activeStyle={{
-              color: '#3CD1A5',
-              textDecoration: 'none',
-            }}
-          >
-            {locale.nav.strings.tools}
-          </NavLink>
+          </ExternalNavLink>
           <ThemeSwitch storage={themeToggle} func={themeToggle.toggle} />
         </NavCont>
       </Container>

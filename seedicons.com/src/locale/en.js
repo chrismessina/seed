@@ -8,9 +8,7 @@ export default {
   },
   nav: {
     strings: {
-      home: 'Icons',
-      usage: 'Code',
-      tools: 'Design',
+      usage: 'Usage',
     },
     hrefs: {
       home: '/',
