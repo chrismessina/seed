@@ -4,56 +4,44 @@ Seed icons is an open-source brand icon set.
 
 Note: All brand icons are trademarks of their respective owners. The use of these trademarks does not indicate endorsement of the trademark holder by Seed icons, nor vice versa.
 
-# Quick start
+## How to use
 
-## Codepen
+### JavaScript
 
-TODO: Codepen
+1. Add the unpkg script
 
-## HTML Example
+`<script src="https://unpkg.com/eva-icons"></script>`
 
-Commentary on how this works here.
+2. Add the data-seed attribute with the icon name to an element in your HTML.
+
+`<i data-seed="figma"></i>`
+
+2. Call `seed.replace()` function before the closing `</body>` tag to replace all elements with the `data-seed` attribute with the corresponding SVG icon. You can also pass size parameters to the replace method to modify the `replace` function behavior.
+
+## Examples
+
+### CodeSandbox Template
+
+View a [live CodeSandbox example](https://codesandbox.io/s/seed-icons-template-inptk) of fundamental HTML implementation.
+
+### HTML Snippet
 
 ```
 <!DOCTYPE html>
-<html lang="en">
-  <title></title>
+<html>
   <script src="https://unpkg.com/seed-icons"></script>
   <body>
-
-    <!-- example icon -->
-    <i data-seed="circle"></i>
-
+    <i data-seed="firefox"></i>
+    <i data-seed="github"></i>
+    <i data-seed="figma" height="60px" width="60px"></i>
     <script>
-      seed.replace()
+      seed.replace();
     </script>
   </body>
 </html>
 ```
 
-# Installation
-
-## CDN
-
-Include feather.js or feather.min.js with a <script> tag:
-
-```
-<script src="https://unpkg.com/seed-icons"></script>
-```
-
-After including the script, seed will be available as a global variable.
-
-## NPM
-
-Install the package:
-
-```
-npm i seed-icons
-```
-
-# Usage
-
-Testing one two
+## Contributing
 
 ### Credits
 

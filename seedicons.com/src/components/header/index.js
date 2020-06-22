@@ -39,7 +39,7 @@ const Header = () => {
             {locale.nav.strings.home}
           </NavLink>
           <NavLink
-            to={locale.nav.hrefs.usage}
+            to={locale.nav.links.github}
             activeStyle={{
               color: '#3CD1A5',
               textDecoration: 'none',
