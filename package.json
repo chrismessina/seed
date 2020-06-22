@@ -1,6 +1,6 @@
 {
   "name": "seed-icons",
-  "version": "1.0.24",
+  "version": "1.0.25",
   "description": "Open source icons in their simplest form.",
   "main": "dist/seed.js",
   "unpkg": "dist/seed.min.js",

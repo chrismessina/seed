@@ -78,7 +78,7 @@ const darkTheme = {
     primary: '#3CD1A5',
     stroke: '#444444',
     placeholder: '#F3F3F3',
-    backgroundLight: '#1f1f1f',
+    backgroundLight: '#171717',
   },
 }
 
