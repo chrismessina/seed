@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Seed Icons`,
-    description: `High quality brand & app icons.`,
+    description: `The icon set that makes finding and leveraging optimized, quality, consistent brand SVG icons a little less painful`,
     author: `@_rossmoody`,
     link: `<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">`,
   },
@@ -25,6 +25,13 @@ module.exports = {
         short_name: `High quality brand & app icons.`,
         start_url: `/`,
         icon: `src/static/favicon.png`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-170212032-1',
+        anonymize: true,
       },
     },
   ],

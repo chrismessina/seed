@@ -8,7 +8,7 @@ Seed icons are available in a few different capacities:
 
 ### SVG Library
 
-Library of optimized SVG files for download on seedicons.com.
+Library of optimized SVG files for download on [seedicons.com](www.seedicons.com).
 
 ### Figma Component Library
 
@@ -140,10 +140,14 @@ Replaces all elements that have a `data-seed` attribute with SVG markup. You can
 
 Returns the supplied icon name SVG as a string.
 
-## Bugs, Requests and Contributing
+--
+
+--
+
+### Bugs, Requests and Contributing
 
 Contributions are always welcome. If you notice and bug or would like to request an icon, [use an issue template](https://github.com/seedicons/seed/issues/new/choose) to kickstart the process.
 
-## Credits
+### Credits
 
 This project is one big mashup and open-source appropriation of projects from [Feather](https://github.com/feathericons/feather), [Ionicons](https://github.com/ionic-team/ionicons), and [Eva Icons](https://akveo.github.io/eva-icons/#/). I started this project as something to work on while I practice React/Gatsby and inspecting those projects as I learn has been truly invaluable. Anything impressive is probably code from them I didn't change. Anything that barely functions is probably from yours truly. Please consider contributing.
