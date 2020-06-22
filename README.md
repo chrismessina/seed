@@ -118,7 +118,7 @@ Replaces all elements that have a `data-seed` attribute with SVG markup. You can
 <!-- Pass the below attributes in the replace method. -->
 <i data-seed="firefox"></i>
 <script>
-  feather.replace({ class: 'foo', height: 40 })
+  seed.replace({ class: 'foo', height: 40 })
 </script>
 
 --
