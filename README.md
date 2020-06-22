@@ -1,6 +1,6 @@
 # 🌱 Seed icons
 
-Seed icons is an open-source icon set that makes tracking down optimized, quality, consistent brand SVG icons a little less painful.
+Seed icons is an open-source icon set that makes tracking down and using optimized, quality, consistent brand SVG icons a little less painful.
 
 ## What's available?
 
@@ -121,7 +121,9 @@ Replaces all elements that have a `data-seed` attribute with SVG markup. You can
   feather.replace({ class: 'foo', height: 40 })
 </script>
 
-<!-- Results in this output: -->
+--
+
+<!-- Returns in this output: -->
 <svg
   xmlns="http://www.w3.org/2000/svg"
   width="100px"
@@ -130,7 +132,7 @@ Replaces all elements that have a `data-seed` attribute with SVG markup. You can
   class="seed seed-figma foo"
   data-seed="figma"
 >
-  <!-- <path>...</path> -->
+  <path>...</path>
 </svg>
 ```
 
