@@ -87,7 +87,7 @@ import { ReactComponent as FirefoxIcon } from 'seed-icons/dist/icons/firefox.svg
 
 # API
 
-## 1. `seed.icons`
+### 1. `seed.icons`
 
 An object with information about every icon. A typical icon object looks like:
 
@@ -110,7 +110,7 @@ seed.icons["google-play"]
 }
 ```
 
-## 2. `seed.replace({attrs})`
+### 2. `seed.replace({attrs})`
 
 Replaces all elements that have a `data-seed` attribute with SVG markup. You can pass seed.replace() an attrs object. All attributes on the placeholder element (i.e. `<i>`) will be copied to the `<svg>` tag. All attributes on the placeholder element (i.e. `<i>`) will be copied to the `<svg>` tag.
 
@@ -136,14 +136,14 @@ Replaces all elements that have a `data-seed` attribute with SVG markup. You can
 </svg>
 ```
 
-## 3. `seed.icons['name'].toSvg({attrs})`
+### 3. `seed.icons['name'].toSvg({attrs})`
 
 Returns the supplied icon name SVG as a string.
 
-# Bugs, Requests and Contributing
+## Bugs, Requests and Contributing
 
 Contributions are always welcome. If you notice and bug or would like to request an icon, [use an issue template](https://github.com/seedicons/seed/issues/new/choose) to kickstart the process.
 
-# Credits
+## Credits
 
 This project is one big mashup and open-source appropriation of projects from [Feather](https://github.com/feathericons/feather), [Ionicons](https://github.com/ionic-team/ionicons), and [Eva Icons](https://akveo.github.io/eva-icons/#/). I started this project as something to work on while I practice React/Gatsby and inspecting those projects as I learn has been truly invaluable. Anything impressive is probably code from them I didn't change. Anything that barely functions is probably from yours truly. Please consider contributing.
