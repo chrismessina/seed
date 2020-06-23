@@ -140,9 +140,7 @@ Replaces all elements that have a `data-seed` attribute with SVG markup. You can
 
 Returns the supplied icon name SVG as a string.
 
---
-
---
+<hr/>
 
 ### Bugs, Requests and Contributing
 
