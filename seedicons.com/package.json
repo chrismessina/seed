@@ -37,7 +37,8 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "start": "npm run develop"
+    "start": "npm run develop",
+    "clean": "gatsby clean"
   },
   "repository": {
     "type": "git",

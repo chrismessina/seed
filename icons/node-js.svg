@@ -1,0 +1,75 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="48"
+  height="48"
+  viewBox="0 0 48 48"
+>
+  <path
+    fill="url(#node-js__a)"
+    d="M24.996 3.266a1.987 1.987 0 00-1.988 0L6.545 12.765a1.986 1.986 0 00-.995 1.722v19.015c0 .71.38 1.365.995 1.722l16.463 9.508a1.993 1.993 0 001.988 0l16.459-9.508a1.99 1.99 0 00.995-1.721V14.487c0-.71-.38-1.366-.995-1.722l-16.459-9.5z"
+  />
+  <path
+    fill="url(#node-js__b)"
+    d="M41.488 12.766l-16.509-9.5a1.978 1.978 0 00-.517-.206L5.926 34.77c.16.179.347.335.555.456l16.537 9.508a2.008 2.008 0 001.536.192l17.377-31.82a2.207 2.207 0 00-.443-.341v.001z"
+  />
+  <path
+    fill="url(#node-js__c)"
+    d="M41.496 35.226c.48-.278.84-.74.973-1.265L24.373 3.043a2.015 2.015 0 00-1.4.223L6.576 12.71 24.29 44.98c.253-.034.5-.115.727-.246l16.48-9.508h-.001z"
+  />
+  <path fill="url(#node-js__d)" d="M43.031 34.92l-.109-.186v.249l.11-.063z" />
+  <defs>
+    <linearGradient
+      id="node-js__a"
+      x1="30.694"
+      x2="15.82"
+      y1="10.341"
+      y2="40.682"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop stop-color="#41873F" />
+      <stop offset=".329" stop-color="#418B3D" />
+      <stop offset=".635" stop-color="#419637" />
+      <stop offset=".932" stop-color="#3FA92D" />
+      <stop offset="1" stop-color="#3FAE2A" />
+    </linearGradient>
+    <linearGradient
+      id="node-js__b"
+      x1="21.494"
+      x2="63.227"
+      y1="26.219"
+      y2="-4.614"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop offset=".138" stop-color="#41873F" />
+      <stop offset=".403" stop-color="#54A044" />
+      <stop offset=".714" stop-color="#66B848" />
+      <stop offset=".908" stop-color="#6CC04A" />
+    </linearGradient>
+    <linearGradient
+      id="node-js__c"
+      x1="4.969"
+      x2="43.031"
+      y1="23.992"
+      y2="23.992"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop offset=".092" stop-color="#6CC04A" />
+      <stop offset=".286" stop-color="#66B848" />
+      <stop offset=".597" stop-color="#54A044" />
+      <stop offset=".862" stop-color="#41873F" />
+    </linearGradient>
+    <linearGradient
+      id="node-js__d"
+      x1="4.969"
+      x2="43.031"
+      y1="34.858"
+      y2="34.858"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop offset=".092" stop-color="#6CC04A" />
+      <stop offset=".286" stop-color="#66B848" />
+      <stop offset=".597" stop-color="#54A044" />
+      <stop offset=".862" stop-color="#41873F" />
+    </linearGradient>
+  </defs>
+</svg>

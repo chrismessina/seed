@@ -10,6 +10,7 @@ import {
   VersionTag,
   ExternalNavLink,
 } from './styled'
+import FigmaIcon from 'seed-icons/dist/icons/figma.svg'
 import locale from '../../locale/en'
 import { version } from 'seed-icons/package.json'
 
@@ -31,6 +32,9 @@ const Header = () => {
         <NavCont>
           <ExternalNavLink href={locale.links.github}>
             {locale.nav.strings.usage}
+          </ExternalNavLink>
+          <ExternalNavLink href={locale.links.figma}>
+            <FigmaIcon height="24px" width="24px" />
           </ExternalNavLink>
           <ThemeSwitch storage={themeToggle} func={themeToggle.toggle} />
         </NavCont>

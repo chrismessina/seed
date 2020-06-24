@@ -26,7 +26,7 @@ function IndexPage({ location }) {
         <Hero />
         <Search
           value={query || ''}
-          onChange={event => setQuery(event.target.value)}
+          onChange={(event) => setQuery(event.target.value)}
           iconResults={results}
         />
         <Note />
