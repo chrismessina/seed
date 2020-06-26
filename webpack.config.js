@@ -9,6 +9,7 @@ module.exports = {
     globalObject: "typeof self !== 'undefined' ? self : this",
   },
   devtool: 'source-map',
+  stats: 'errors-only',
   module: {
     rules: [
       {

@@ -17,6 +17,9 @@ mkdir dist/icons
 # Build SVG icons
 npx babel-node scripts/services/build-svgs.js
 
+# Build tags json
+npx babel-node scripts/services/build-tags.js
+
 # Build JavaScript library
 npx webpack --output-filename seed.js --mode development
 npx webpack --output-filename seed.min.js --mode production
