@@ -1,6 +1,5 @@
 <svg
   xmlns="http://www.w3.org/2000/svg"
-  xlink="http://www.w3.org/1999/xlink"
   width="48"
   height="48"
   viewBox="0 0 48 48"
@@ -62,7 +61,7 @@
       height="1"
       patternContentUnits="objectBoundingBox"
     >
-      <use transform="scale(.0072)" href="#delve__d" />
+      <use href="#delve__d" transform="scale(.0072)" />
     </pattern>
     <pattern
       id="delve__b"
@@ -70,7 +69,7 @@
       height="1"
       patternContentUnits="objectBoundingBox"
     >
-      <use transform="scale(.00943)" href="#delve__e" />
+      <use href="#delve__e" transform="scale(.00943)" />
     </pattern>
     <image
       id="delve__d"
