@@ -8,8 +8,8 @@
     "dist"
   ],
   "scripts": {
+    "build": "npx ./scripts/build.sh",
     "start": "npm run build && npm run format",
-    "build": "./scripts/build.sh",
     "official": "npm i && npm run start && npm publish",
     "format": "npx prettier --check --write package scripts seedicons.com/src"
   },

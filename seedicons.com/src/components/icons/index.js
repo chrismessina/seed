@@ -10,11 +10,11 @@ export function IconGrid({ icons }) {
   return (
     <Content>
       <IconsGrid>
-        {iconArr.map((icon) => (
+        {iconArr.map(icon => (
           <IconCont
             key={icon.name}
             title={`Download ${icon.name}.svg`}
-            onClick={(event) => {
+            onClick={event => {
               if (event.shiftKey) {
                 copy(icon.toSvg())
               } else {
@@ -22,7 +22,7 @@ export function IconGrid({ icons }) {
               }
             }}
           >
-            <Icon content={icon.contents} size={48} />
+            <Icon content={icon.contents} size={60} />
             <Tooltip>{icon.name}</Tooltip>
           </IconCont>
         ))}
