@@ -10,9 +10,9 @@ export const Content = styled.div`
 
 export const IconsGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
-  grid-auto-rows: minmax(90px, auto);
-  grid-gap: ${(p) => p.theme.space[4]};
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  grid-auto-rows: minmax(80px, auto);
+  grid-gap: ${(p) => p.theme.space[5]};
 `
 
 export const IconCont = styled.div`

@@ -52,6 +52,7 @@ export const DownloadButton = styled.button`
 
   &:hover {
     cursor: pointer;
+    background: ${(p) => p.theme.colors.primaryHover};
   }
 
   &:focus {
