@@ -1,6 +1,5 @@
 import React from 'react'
 import { StringParam, useQueryParam } from 'use-query-params'
-// import { parse } from 'serialize-query-params'
 import SEO from '../components/seo'
 import Layout from '../components/layout'
 import { MyThemeProvider } from '../theme/theme-context'
