@@ -1,4 +1,6 @@
 import React from 'react'
+import FigmaIcon from 'seed-icons/dist/icons/figma.svg'
+import { version } from 'seed-icons/package.json'
 import { useTheme } from '../../theme/theme-context'
 import { Flex, Logotype, Logo, ThemeSwitch } from '../base'
 import {
@@ -10,9 +12,7 @@ import {
   VersionTag,
   ExternalNavLink,
 } from './styled'
-import FigmaIcon from 'seed-icons/dist/icons/figma.svg'
 import locale from '../../locale/en'
-import { version } from 'seed-icons/package.json'
 
 const Header = () => {
   const themeToggle = useTheme()
@@ -20,7 +20,7 @@ const Header = () => {
   return (
     <StyledHeader>
       <Container>
-        <Flex ai={'center'}>
+        <Flex ai="center">
           <LogotypeCont to={locale.nav.hrefs.home}>
             <Logotype />
           </LogotypeCont>

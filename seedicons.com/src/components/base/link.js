@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Link = styled.a`
+const Link = styled.a`
   font-size: ${(p) => p.theme.fontSizes[2]};
   text-decoration: none;
   color: ${(p) => p.theme.colors.primary};
@@ -10,3 +10,5 @@ export const Link = styled.a`
     text-decoration: underline;
   }
 `
+
+export default Link

@@ -1,4 +1,6 @@
 import React from 'react'
+import JSZip from 'jszip'
+import download from 'downloadjs'
 import {
   StyledSearch,
   SearchInput,
@@ -7,8 +9,6 @@ import {
   DownloadButton,
 } from './styled'
 import { Icon } from '../base'
-import JSZip from 'jszip'
-import download from 'downloadjs'
 import locale from '../../locale/en'
 
 function generateZip(iconResults) {

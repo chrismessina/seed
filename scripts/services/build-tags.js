@@ -23,10 +23,10 @@ function fixupTags(obj, arr) {
 }
 
 function sortKeys(obj) {
-  var ordered = {}
+  const ordered = {}
   Object.keys(obj)
     .sort()
-    .forEach(function (key) {
+    .forEach((key) => {
       ordered[key] = obj[key]
     })
   return ordered

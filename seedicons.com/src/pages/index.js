@@ -1,8 +1,7 @@
 import React from 'react'
+import { StringParam, useQueryParam } from 'use-query-params'
 import SEO from '../components/seo'
 import Layout from '../components/layout'
-import { parse } from 'serialize-query-params'
-import { StringParam, useQueryParam } from 'use-query-params'
 import { MyThemeProvider } from '../theme/theme-context'
 import { Hero } from '../components/hero'
 import { Search } from '../components/search'
@@ -10,12 +9,8 @@ import { IconGrid } from '../components/icons'
 import { Note } from '../components/note'
 import useSearch from '../utils/useSearch'
 
-function IndexPage({ location }) {
-  const [query, setQuery] = useQueryParam(
-    'query',
-    StringParam,
-    parse(location.search)
-  )
+function IndexPage() {
+  const [query, setQuery] = useQueryParam('query', StringParam)
 
   const results = useSearch(query || '')
 

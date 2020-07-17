@@ -3,6 +3,7 @@ import styled, { ThemeProvider } from 'styled-components'
 import { lightTheme, darkTheme } from './theme'
 
 const ThemeToggleContext = React.createContext()
+
 export const useTheme = () => React.useContext(ThemeToggleContext)
 
 export const MyThemeProvider = ({ children }) => {
@@ -29,12 +30,10 @@ export const MyThemeProvider = ({ children }) => {
   }
 
   return (
-    <ThemeToggleContext.Provider value={{ toggle: toggle }}>
+    <ThemeToggleContext.Provider value={{ toggle }}>
       <ThemeProvider theme={themeState}>
         <Wrapper>{children}</Wrapper>
       </ThemeProvider>
     </ThemeToggleContext.Provider>
   )
 }
-
-export default ThemeProvider
