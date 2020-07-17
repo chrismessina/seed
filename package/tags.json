@@ -81,6 +81,6 @@
   "xcel": ["microsoft", "office"],
   "xd": ["adobe", "creative"],
   "youtube": ["google", "video", "motion"],
-  "zendesk": ["customer", "support"],
+  "zendesk": ["customer", "support", "saas"],
   "zoom": ["video", "chat"]
 }

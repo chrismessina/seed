@@ -9,6 +9,8 @@
   },
   "rules": {
     "import/prefer-default-export": "off",
+    "no-use-before-define": "off",
+    "no-restricted-syntax": "off",
     "no-param-reassign": "off",
     "jsx-a11y/href-no-hash": ["off"],
     "react/prop-types": "off",

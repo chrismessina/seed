@@ -11,7 +11,7 @@ const svgFiles = fs
   .map((file) => file.slice(0, -4))
 
 svgFiles.forEach((file) => {
-  tags.hasOwnProperty(file) ? null : (tags[file] = [])
+  if (!Object.prototype.hasOwnProperty.call(tags, file)) tags[file] = []
 })
 
 function fixupTags(obj, arr) {
