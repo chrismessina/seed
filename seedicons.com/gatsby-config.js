@@ -16,6 +16,7 @@ module.exports = {
         path: `${__dirname}/src/static`,
       },
     },
+    'gatsby-plugin-use-query-params',
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
