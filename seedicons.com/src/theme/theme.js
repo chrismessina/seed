@@ -54,7 +54,6 @@ const lightTheme = {
     stroke: '#DBE0EA',
     placeholder: '#757575',
     backgroundLight: '#f0f2f5',
-    backgroundLightHover: 'blue',
     focus: '0 0 0 2px rgba(60, 209, 165, .5)',
   },
   radii: '8px',

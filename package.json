@@ -1,6 +1,6 @@
 {
   "name": "seed-icons",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "description": "An open-source icon set that makes tracking down and using optimized, quality, consistent brand SVG icons a little less painful.",
   "main": "dist/seed.js",
   "unpkg": "dist/seed.min.js",

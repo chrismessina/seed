@@ -4,6 +4,7 @@
   height="48"
   viewBox="0 0 48 48"
 >
+  <rect width="48" height="48" fill="#fff" rx="8" />
   <circle cx="24" cy="24" r="20" fill="#FCFCFC" />
   <path
     fill="#016087"

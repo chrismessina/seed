@@ -72,7 +72,7 @@ export const VersionTag = styled.a`
   background: ${(p) => p.theme.colors.primaryLight};
   padding: ${(p) => p.theme.space[1]} ${(p) => p.theme.space[2]};
   border-radius: ${(p) => p.theme.radii};
-  font-size: ${(p) => p.theme.fontSizes[1]};
+  font-size: ${(p) => p.theme.fontSizes[2]};
   font-weight: ${(p) => p.theme.fontWeights.medium};
   height: fit-content;
   text-decoration: none;

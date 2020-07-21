@@ -1,0 +1,191 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="48"
+  height="48"
+  viewBox="0 0 48 48"
+>
+  <rect width="48" height="48" fill="#fff" rx="8" />
+  <path
+    fill="url(#airflow__a)"
+    d="M31.6 39.2H43L24.76 24c-.25 5.52 2.18 10.922 6.84 15.2z"
+  />
+  <path
+    fill="url(#airflow__b)"
+    d="M8.8 31.6V43L24 24.76a17.17 17.17 0 00-.776-.018c-5.248 0-10.347 2.417-14.424 6.858z"
+  />
+  <path
+    fill="url(#airflow__c)"
+    d="M5 8.8L23.24 24c.25-5.52-2.18-10.922-6.84-15.2H5z"
+  />
+  <path
+    fill="url(#airflow__d)"
+    d="M39.2 5L24 23.24c5.52.25 10.922-2.18 15.2-6.84V5z"
+  />
+  <path
+    fill="url(#airflow__e)"
+    d="M24 24c-1.704 4.417-1.447 8.919.76 13.3 2.28 1.14 4.18 1.9 6.84 1.9-4.66-4.278-7.09-9.68-6.84-15.2H24z"
+  />
+  <path
+    fill="url(#airflow__f)"
+    d="M10.7 24.76c-1.14 2.28-1.9 4.18-1.9 6.84 4.278-4.66 9.68-7.09 15.2-6.84V24c-1.921-.741-3.859-1.111-5.795-1.111-2.515 0-5.03.624-7.505 1.871z"
+  />
+  <path
+    fill="url(#airflow__g)"
+    d="M23.24 24H24c1.704-4.417 1.447-8.92-.76-13.3-2.28-1.14-4.18-1.9-6.84-1.9 4.66 4.278 7.09 9.68 6.84 15.2z"
+  />
+  <path
+    fill="url(#airflow__h)"
+    d="M24 23.24V24c4.417 1.704 8.919 1.446 13.3-.76 1.14-2.28 1.9-4.18 1.9-6.84-4.278 4.66-9.68 7.09-15.2 6.84z"
+  />
+  <path
+    fill="url(#airflow__i)"
+    d="M15.64 29.7l9.12 7.6c-2.207-4.38-2.464-8.883-.76-13.3a2.911 2.911 0 00-.914-.13c-2.612 0-7.11 2.47-7.446 5.83z"
+  />
+  <path
+    fill="url(#airflow__j)"
+    d="M10.7 24.76c4.381-2.207 8.883-2.464 13.3-.76.76-2.28-1.9-7.98-5.7-8.36l-7.6 9.12z"
+  />
+  <path
+    fill="url(#airflow__k)"
+    d="M24 24c2.28.76 7.98-1.9 8.36-5.7l-9.12-7.6c2.207 4.38 2.464 8.883.76 13.3z"
+  />
+  <path
+    fill="url(#airflow__l)"
+    d="M24 24c-.76 2.28 1.9 7.98 5.7 8.36l7.6-9.12c-4.38 2.206-8.883 2.464-13.3.76z"
+  />
+  <path d="M24 23.05a.95.95 0 110 1.9.95.95 0 010-1.9z" />
+  <defs>
+    <radialGradient
+      id="airflow__a"
+      cx="0"
+      cy="0"
+      r="1"
+      gradientTransform="matrix(18.2576 0 0 15.2 21.436 33.497)"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop stop-color="#00C812" />
+      <stop offset="1" stop-color="#006E00" />
+    </radialGradient>
+    <radialGradient
+      id="airflow__b"
+      cx="0"
+      cy="0"
+      r="1"
+      gradientTransform="matrix(0 15.2001 -18.2575 0 -11.436 8.164)"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop stop-color="#56AFFD" />
+      <stop offset="1" stop-color="#04A3FF" />
+    </radialGradient>
+    <radialGradient
+      id="airflow__c"
+      cx="0"
+      cy="0"
+      r="1"
+      gradientTransform="matrix(-18.2576 0 0 -15.2 -9.928 1.836)"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop stop-color="#DF1F00" />
+      <stop offset="1" stop-color="#560D00" />
+    </radialGradient>
+    <radialGradient
+      id="airflow__d"
+      cx="0"
+      cy="0"
+      r="1"
+      gradientTransform="matrix(0 -15.2001 18.2575 0 20.225 -23.2)"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop stop-color="#00FFFD" />
+      <stop offset="1" stop-color="#00DAFF" />
+    </radialGradient>
+    <radialGradient
+      id="airflow__e"
+      cx="0"
+      cy="0"
+      r="1"
+      gradientTransform="matrix(8.71119 0 0 15.2 22.889 39.2)"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop stop-color="#008200" />
+      <stop offset="1" stop-color="#007500" />
+    </radialGradient>
+    <radialGradient
+      id="airflow__f"
+      cx="0"
+      cy="0"
+      r="1"
+      gradientTransform="matrix(0 15.2 -8.7112 0 -12.889 8.8)"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop stop-color="#3166D4" />
+      <stop offset="1" stop-color="#1A509E" />
+    </radialGradient>
+    <radialGradient
+      id="airflow__g"
+      cx="0"
+      cy="0"
+      r="1"
+      gradientTransform="matrix(-8.7112 0 0 -15.2 -14.814 1.2)"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop stop-color="#8E1400" />
+      <stop offset="1" stop-color="#4B0B00" />
+    </radialGradient>
+    <radialGradient
+      id="airflow__h"
+      cx="0"
+      cy="0"
+      r="1"
+      gradientTransform="matrix(0 -15.1999 8.71126 0 25.111 -28.903)"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop stop-color="#0090C4" />
+      <stop offset="1" stop-color="#005D8C" />
+    </radialGradient>
+    <radialGradient
+      id="airflow__i"
+      cx="0"
+      cy="0"
+      r="1"
+      gradientTransform="matrix(9.11999 0 0 13.43 15.64 37.3)"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop stop-color="#00CD1C" />
+      <stop offset="1" stop-color="#00E950" />
+    </radialGradient>
+    <radialGradient
+      id="airflow__j"
+      cx="0"
+      cy="0"
+      r="1"
+      gradientTransform="matrix(0 13.43 -9.12 0 -5.64 10.7)"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop stop-color="#B1C8FD" />
+      <stop offset="1" stop-color="#7EC3FD" />
+    </radialGradient>
+    <radialGradient
+      id="airflow__k"
+      cx="0"
+      cy="0"
+      r="1"
+      gradientTransform="matrix(-9.12001 0 0 -13.43 -22.063 -.7)"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop stop-color="#E12A00" />
+      <stop offset="1" stop-color="#B62F00" />
+    </radialGradient>
+    <radialGradient
+      id="airflow__l"
+      cx="0"
+      cy="0"
+      r="1"
+      gradientTransform="matrix(0 -13.4298 9.12016 0 32.36 -27.003)"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop stop-color="#00B6DD" />
+      <stop offset="1" stop-color="#0FF" />
+    </radialGradient>
+  </defs>
+</svg>

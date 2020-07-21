@@ -1,0 +1,29 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="48"
+  height="48"
+  viewBox="0 0 48 48"
+>
+  <rect width="48" height="48" fill="#fff" rx="8" />
+  <path
+    fill="url(#atlassian__a)"
+    d="M17.037 20.654c-.51-.544-1.302-.513-1.648.179L7.04 37.529a.998.998 0 00.893 1.445h11.626c.38.009.73-.208.893-.552 2.507-5.183.988-13.064-3.415-17.768z"
+  />
+  <path
+    fill="#2681FF"
+    d="M23.163 5.468c-4.67 7.397-4.361 15.59-1.285 21.742l5.605 11.212a1 1 0 00.893.552h11.626a.998.998 0 00.893-1.445S25.255 6.244 24.86 5.461c-.352-.7-1.246-.71-1.698.007z"
+  />
+  <defs>
+    <linearGradient
+      id="atlassian__a"
+      x1="21.613"
+      x2="9.909"
+      y1="23.231"
+      y2="35.803"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop stop-color="#0052CC" />
+      <stop offset=".923" stop-color="#2684FF" />
+    </linearGradient>
+  </defs>
+</svg>

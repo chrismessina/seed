@@ -1,0 +1,25 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="48"
+  height="48"
+  viewBox="0 0 48 48"
+>
+  <rect width="48" height="48" fill="#fff" rx="8" />
+  <path
+    fill="url(#dato__a)"
+    d="M25 8H9v32.206h16c8.002 0 16-7.21 16-16.1C41 15.213 33.002 8 25 8zm0 23.42a7.317 7.317 0 11.006-14.634A7.317 7.317 0 0125 31.42z"
+  />
+  <defs>
+    <linearGradient
+      id="dato__a"
+      x1="9"
+      x2="41"
+      y1="24.103"
+      y2="24.103"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop stop-color="#FF593D" />
+      <stop offset="1" stop-color="#FF7751" />
+    </linearGradient>
+  </defs>
+</svg>
